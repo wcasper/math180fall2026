@@ -13,7 +13,7 @@ permalink: /syllabus
 
 **Office hourse:** TBA.  Additional office hours may be available by request.
 
-**Course website:** the main course website will be <a target="_parent" href="https://wcasper.github.io/math180fall2025">Github Pages site (link)</a>, but we will also use the Canvas website (Fall 2025 MATH 180-05 19502) for submitting assignments and maintaining grades
+**Course website:** the main course website will be <a target="_parent" href="https://wcasper.github.io/math180fall2026">Github Pages site (link)</a>, but we will also use the Canvas website for submitting assignments and maintaining grades
 
 ## Course meeting information
 * Section: 05
