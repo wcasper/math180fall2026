@@ -1,0 +1,841 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This file is a template using the "beamer" package to create slides for a talk or presentation
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+% MODIFIED by Jonathan Kew, 2008-07-06
+% The header comments and encoding in this file were modified for inclusion with TeXworks.
+% The content is otherwise unchanged from the original distributed with the beamer package.
+
+\documentclass{beamer}
+\setbeamercovered{invisible}
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+\usepackage{qrcode}
+\usepackage{hyperref}
+\usepackage{ytableau}
+\usepackage{longtable}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%%% MATH RELATED
+
+\title{MATH 180 Strategies of Problem Solving} 
+\subtitle
+{} % (optional)
+
+\author[W.R. Casper] % (optional, use only with lots of authors)
+{W.R. Casper}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[California State University Fullerton] % (optional, but mostly needed)
+{
+  Department of Mathematics\\
+  California State University Fullerton}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{SoPS Lecture 4}
+\subsection{$3\times n$ Chomp}
+
+
+\begin{frame}{Chomp Review}
+  \begin{block}{Last time}
+    \begin{itemize}
+\pause
+      \item we learned the "strategy-stealing argument"
+\pause
+      \item we proved {\color{blue}Player 1} has a perfect strategy
+\pause
+      \item we figured out the strategy for $1\times n$ and $2\times n$ Chomp
+\pause
+      \item by \textbf{symmetry}: strategy for $n\times 1$ and $n\times 2$ Chomp
+    \end{itemize}
+  \end{block}
+\pause
+  \begin{block}{Question}
+    What about $3\times n$ chomp?
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+\pause
+  \begin{block}{Question}
+    What is the perfect strategy for $3\times 3$ Chomp?
+    \begin{center}
+      \ydiagram{3,3,3}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+\pause
+  \begin{block}{Answer}
+    First move:
+    \begin{center}
+      \ydiagram{1,1,3}
+    \end{center}
+\pause
+    Then Copycat Strategy!
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Question}
+    What is the best first move for $3\times 4$ Chomp?
+    \begin{center}
+      \ydiagram{4,4,4}
+    \end{center}
+  \end{block}
+\pause
+  \begin{block}{Activity (10 mins)}
+    Break into small groups and discuss.  What's the strategy?
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{First move?}
+      Can't be left column or bottom row, because it'd make a rectangle (winning board), eg.
+      $$(1,1): \ydiagram{4,4,4}\rightarrow \ydiagram{0,4,4}$$
+      $$(3,3): \ydiagram{4,4,4}\rightarrow \ydiagram{2,2,2}$$
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{First move?}
+      Can't be $(2,2)$, since then they could follow up with $(3,4)$
+      $$(2,2): \ydiagram{4,4,4}\rightarrow \ydiagram{1,1,4}$$
+      $$(3,4): \ydiagram{1,1,4}\rightarrow \ydiagram{1,1,3}$$
+      Then we lose to Copycat Strategy
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{First move?}
+      Can't be $(1,2)$, since then they could follow up with $(3,3)$
+      $$(1,2): \ydiagram{4,4,4}\rightarrow \ydiagram{1,4,4}$$
+      $$(3,3): \ydiagram{1,4,4}\rightarrow \ydiagram{1,2,2}$$
+      Then we lose to the $n\times 2$ strategy
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Theorem}
+    The best first move for $3\times 4$ Chomp is $(2,3)$.
+  \end{block}
+\pause
+  \begin{block}{Proof}
+    Board after the first move:
+    $$\ydiagram{2,2,4}$$
+\pause
+    How could {\color{red}Player 2} follow up?
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Cases}
+    $$(1,1): \ydiagram{2,2,4} \rightarrow \ydiagram{0,2,4}$$
+    $$(2,1): \ydiagram{2,2,4} \rightarrow \ydiagram{0,0,4}$$
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Cases}
+    $$(1,2): \ydiagram{2,2,4} \rightarrow \ydiagram{1,2,4}$$
+    $$(2,2): \ydiagram{2,2,4} \rightarrow \ydiagram{1,1,4}$$
+    $$(3,2): \ydiagram{2,2,4} \rightarrow \ydiagram{1,1,1}$$
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Cases}
+    $$(3,3): \ydiagram{2,2,4} \rightarrow \ydiagram{2,2,2}$$
+    $$(3,4): \ydiagram{2,2,4} \rightarrow \ydiagram{2,2,3}$$
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Question}
+    What is the best first move for $3\times 5$ Chomp?
+    \begin{center}
+      \ydiagram{5,5,5}
+    \end{center}
+  \end{block}
+  \begin{block}{Activity (20 mins)}
+    Break into small groups and discuss.  How many moves can you eliminate?
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Process of elimination}
+    \begin{center}
+      \begin{ytableau}
+        x &   &   &   &   \\
+        x &   &   &   &   \\
+        x & x & x & x & x
+      \end{ytableau}
+    \end{center}
+    Avoid left side and bottom due to rectangles.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{What about $(2,2)$?}
+    \begin{center}
+      \ydiagram{1,1,5}
+    \end{center}
+\pause
+    Then they could just do the Copycat Strategy.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Process of elimination}
+    \begin{center}
+      \begin{ytableau}
+        x &   &   &   &   \\
+        x & x &   &   &   \\
+        x & x & x & x & x
+      \end{ytableau}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{What about $(1,2)$?}
+    \begin{center}
+      \ydiagram{1,5,5}
+    \end{center}
+\pause
+    They can follow up with a $(3,3)$
+    \begin{center}
+      \ydiagram{1,2,2}
+    \end{center}
+    and then use $n\times 2$ tactics
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Process of elimination}
+    \begin{center}
+      \begin{ytableau}
+        x & x &   &   &   \\
+        x & x &   &   &   \\
+        x & x & x & x & x
+      \end{ytableau}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{What about $(2,3)$?}
+    \begin{center}
+      \ydiagram{2,2,5}
+    \end{center}
+\pause
+    They can follow up with a $(3,5)$
+    \begin{center}
+      \ydiagram{2,2,4}
+    \end{center}
+    Looks like they did the winning move for $3\times 4$
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Process of elimination}
+    \begin{center}
+      \begin{ytableau}
+        x & x &   &   &   \\
+        x & x & x &   &   \\
+        x & x & x & x & x
+      \end{ytableau}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{What about $(1,3)$?}
+    \begin{center}
+      \ydiagram{2,5,5}
+    \end{center}
+\pause
+    They can follow up with a $(2,4)$
+    \begin{center}
+      \ydiagram{2,3,5}
+    \end{center}
+    This is a losing board! 
+  \end{block}
+\end{frame}
+
+\begin{frame}{Prove it}
+  \begin{block}{Activity (10 mins)}
+    Prove that the board
+    \begin{center}
+      \ydiagram{2,3,5}
+    \end{center}
+    is a \textbf{losing board}, ie. the next player to play can be forced to lose.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Process of elimination}
+    \begin{center}
+      \begin{ytableau}
+        x & x & x &   &   \\
+        x & x & x &   &   \\
+        x & x & x & x & x
+      \end{ytableau}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{What about $(2,4)$?}
+    \begin{center}
+      \ydiagram{3,3,5}
+    \end{center}
+\pause
+    They can follow up with a $(1,3)$
+    \begin{center}
+      \ydiagram{2,3,5}
+    \end{center}
+    We just saw this was a losing position.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Process of elimination}
+    \begin{center}
+      \begin{ytableau}
+        x & x & x &   &   \\
+        x & x & x & x &   \\
+        x & x & x & x & x
+      \end{ytableau}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Process of elimination}
+    \begin{center}
+      \begin{ytableau}
+        x & x & x & ? & ? \\
+        x & x & x & x & ? \\
+        x & x & x & x & x
+      \end{ytableau}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+  \begin{block}{Theorem}
+    The perfect first move for $3\times 5$ Chomp is $(1,4)$.
+    \begin{center}
+      \ydiagram{3,5,5}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\subsection{Strong Law of Small Numbers}
+
+\begin{frame}{Getting moves for higher $n$ values}
+  \begin{block}{Finding the perfect move requires ...}
+    \begin{itemize}
+\pause
+      \item remembering lots of past boards
+\pause
+      \item checking lots of ``if then" cases
+    \end{itemize}
+  \end{block}
+\pause
+  \begin{block}{}
+    \begin{center}
+      Computers are really good at this!
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Computer calculating of best $3\times n$ move}
+\begin{center}
+\begin{tabular}{r|c|c}
+\hline
+$n$ & Width $w$ & Play at (row, col) \\
+\hline
+
+
+2  & 1  & (1,2)  \\
+3  & 2  & (2,2)  \\
+4  & 2  & (2,3)  \\
+5  & 2  & (1,4)  \\
+6  & 3  & (2,4)  \\
+7  & 3  & (1,5)  \\
+8  & 4  & (2,5)  \\
+9  & 3  & (1,7)  \\
+10 & 5  & (2,6)  \\
+11 & 5  & (2,7)  \\
+12 & 4  & (1,9)  \\
+13 & 6  & (2,8)  \\
+14 & 4  & (1,11) \\
+15 & 7  & (2,9)  \\
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Positions of Best First Moves}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+    & 2 &   & 5 & 7 & 9 &   &   &12 &   &14 \\\hline
+  1 & 3 & 4 & 6 & 8 &10 &11 &13 &15 &16 &18 \\\hline
+    &   &   &   &   &   &   &   &   &   &   \\\hline
+\end{tabular}
+\end{center}
+Entries represent the board length for which the corresponding spot is the best first move.
+\begin{block}{Question}
+Can you see any patterns?
+\end{block}
+\end{frame}
+
+\begin{frame}{Notice patterns}
+  \begin{block}{Submit your findings:}
+    \begin{center}
+      \qrcode[hyperlink,height=2cm]{https://padlet.com/williamrileycasper/conjectures-for-losing-positions-33ai54j4kifc9hx6}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Create conjectures}
+  \begin{block}{Conjecture 1}
+    Each intege $n$ end up in a unique spot in the table.
+  \end{block}
+\pause
+  \begin{block}{Conjecture 2}
+    The numbers in any row get bigger from left to right
+  \end{block}
+\pause
+  \begin{block}{Conjecture 3}
+    The second row doesn't have any ``gaps"
+  \end{block}
+\pause
+  \begin{block}{Next steps}
+    \begin{itemize}
+\pause
+      \item gather more evidence
+\pause
+      \item try to prove it!
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Computer calculating of best $3\times n$ move}
+\begin{center}
+\begin{tabular}{r|c}
+\hline
+$n$ & Play at (row, col) \\
+\hline
+2  & ( 1 , 2 ) \\
+3  & ( 2 , 2 ) \\
+4  & ( 2 , 3 ) \\
+5  & ( 1 , 4 ) \\
+6  & ( 2 , 4 ) \\
+7  & ( 1 , 5 ) \\
+8  & ( 2 , 5 ) \\
+9  & ( 1 , 7 ) \\
+10  & ( 2 , 6 ) \\
+11  & ( 2 , 7 ) \\
+12  & ( 1 , 9 ) \\
+13  & ( 2 , 8 ) \\
+14  & ( 1 , 11 ) \\
+\end{tabular}
+\end{center}
+\end{frame}
+\begin{frame}{Computer calculating of best $3\times n$ move}
+\begin{center}
+\begin{tabular}{r|c}
+\hline
+$n$ & Play at (row, col) \\
+\hline
+15  & ( 2 , 9 ) \\
+16  & ( 2 , 10 ) \\
+17  & ( 1 , 13 ) \\
+18  & ( 2 , 11 ) \\
+19  & ( 1 , 14 ) \\
+20  & ( 2 , 12 ) \\
+21  & ( 2 , 13 ) \\
+22  & ( 1 , 16 ) \\
+23  & ( 1 , 17 ) \\
+24  & ( 2 , 14 ) \\
+25  & ( 2 , 15 ) \\
+26  & ( 1 , 19 ) \\
+27  & ( 2 , 16 ) \\
+\end{tabular}
+\end{center}
+\end{frame}
+\begin{frame}{Computer calculating of best $3\times n$ move}
+\begin{center}
+\begin{tabular}{r|c}
+\hline
+$n$ & Play at (row, col) \\
+\hline
+28  & ( 2 , 17 ) \\
+29  & ( 1 , 21 ) \\
+30  & ( 2 , 18 ) \\
+31  & ( 1 , 22 ) \\
+32  & ( 2 , 19 ) \\
+33  & ( 1 , 24 ) \\
+34  & ( 2 , 20 ) \\
+35  & ( 2 , 21 ) \\
+36  & ( 1 , 26 ) \\
+37  & ( 2 , 22 ) \\
+38  & ( 1 , 28 ) \\
+39  & ( 2 , 23 ) \\
+40  & ( 2 , 24 ) \\
+\end{tabular}
+\end{center}
+\end{frame}
+\begin{frame}{Computer calculating of best $3\times n$ move}
+\begin{center}
+\begin{tabular}{r|c}
+\hline
+$n$ & Play at (row, col) \\
+\hline
+41  & ( 1 , 30 ) \\
+42  & ( 2 , 25 ) \\
+43  & ( 1 , 31 ) \\
+44  & ( 2 , 26 ) \\
+45  & ( 2 , 27 ) \\
+46  & ( 1 , 33 ) \\
+47  & ( 1 , 34 ) \\
+48  & ( 2 , 28 ) \\
+49  & ( 2 , 29 ) \\
+50  & ( 1 , 36 ) \\
+51  & ( 2 , 30 ) \\
+52  & ( 1 , 38 ) \\
+\end{tabular}
+\end{center}
+\end{frame}
+\begin{frame}{Computer calculating of best $3\times n$ move}
+\begin{center}
+\begin{tabular}{r|c}
+\hline
+$n$ & Play at (row, col) \\
+\hline
+53  & ( 2 , 31 ) \\
+54  & ( 2 , 32 ) \\
+55  & ( 1 , 40 ) \\
+56  & ( 2 , 33 ) \\
+57  & ( 2 , 34 ) \\
+58  & ( 1 , 42 ) \\
+59  & ( 2 , 35 ) \\
+60  & ( 2 , 36 ) \\
+61  & ( 1 , 44 ) \\
+62  & ( 1 , 45 ) \\
+63  & ( 2 , 37 ) \\
+64  & ( 2 , 38 ) \\
+65  & ( 1 , 47 ) \\
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Prove conjectures}
+  \begin{block}{Theorem}
+    Each intege $n$ end up in a unique spot in the table.
+  \end{block}
+\pause
+  \begin{block}{Proof}
+    Assume there is a spot $(j,k)$ which occurs twice, for values $m,n$ with $0<m<n$.\\
+\pause
+    Start with a $3\times n$ grid.\\
+\pause
+    Then if {\color{blue}Player 1} chooses $(j,k)$ they should win.\\
+\pause
+    However, if {\color{red}Player 2} follows by choosing $(3,n-m+1)$, it's equivalent to them having choosen $(j,k)$ on the $3\times n$ grid.\\
+\pause
+    Therefore {\color{red}Player 2} should be the one that wins.\\
+\pause
+    Contradiction.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Or find a counter-example}
+\begin{center}
+\begin{tabular}{r|c}
+\hline
+$n$ & Play at (row, col) \\
+\hline
+66  & ( 2 , 39 ) \\
+67  & ( 1 , 48 ) \\
+68  & ( 2 , 40 ) \\
+69  & ( 1 , 50 ) \\
+70  & ( 2 , 41 ) \\
+71  & ( 1 , 51 ) \\
+72  & ( 2 , 42 ) \\
+73  & ( 2 , 43 ) \\
+74  & ( 2 , 44 ) \\
+75  & ( 1 , 53 ) \\
+76  & ( 2 , 45 ) \\
+77  & ( 1 , 55 ) \\
+78  & ( 2 , 46 ) \\
+\end{tabular}
+\end{center}
+\end{frame}
+\begin{frame}{Computer calculating of best $3\times n$ move}
+\begin{center}
+\begin{tabular}{r|c}
+\hline
+$n$ & Play at (row, col) \\
+\hline
+79  & ( 1 , 56 ) \\
+80  & ( 2 , 47 ) \\
+81  & ( 1 , 58 ) \\
+82  & ( 2 , 48 ) \\
+83  & ( 2 , 49 ) \\
+84  & ( 1 , 60 ) \\
+85  & ( 2 , 50 ) \\
+86  & ( 1 , 62 ) \\
+87  & ( 2 , 51 ) \\
+88  & ( 2 , 53 ) \\
+89  & ( 2 , 52 ) \\
+90  & ( 1 , 64 ) \\
+91  & ( 1 , 65 ) \\
+\end{tabular}
+\end{center}
+\end{frame}
+\begin{frame}{Computer calculating of best $3\times n$ move}
+\begin{center}
+\begin{tabular}{r|c}
+\hline
+$n$ & Play at (row, col) \\
+\hline
+92  & ( 2 , 54 ) \\
+93  & ( 2 , 55 ) \\
+94  & ( 1 , 67 ) \\
+95  & ( 2 , 56 ) \\
+96  & ( 2 , 57 ) \\
+97  & ( 1 , 69 ) \\
+98  & ( 2 , 58 ) \\
+99  & ( 1 , 71 ) \\
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Counter-example}
+  \begin{block}{Conjecture}
+    The number in the middle row must increase.
+  \end{block}
+\pause
+  \begin{block}{First counter-example}
+    For $n=88$, the best first move is $(2,53)$, but for $n=87$ the best first move is $(2,52)$
+  \end{block}
+\end{frame}
+
+\begin{frame}{Strong Law of Small Numbers}
+\pause
+  \begin{block}{Richard Guy:}
+    There aren't enough small numbers to make the many demands of them.
+  \end{block}
+\pause
+  \begin{block}{Meaning}
+    \begin{itemize}
+\pause
+      \item Mathematics is full of conjectures which are true for small numbers, but then fail for larger ones.
+\pause
+      \item Observations are evidence, but not proofs!
+\pause
+      \item Be suspicious!
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Strong Law of Small Numbers}
+  \begin{block}{Example (Primes)}
+    \begin{itemize}
+\pause
+      \item $31$ is prime
+\pause
+      \item $331$ is prime
+\pause
+      \item $3331$ is prime
+\pause
+      \item $33331$ is prime
+\pause
+      \item $333331$ is prime
+\pause
+      \item $3333331$ is prime
+\pause
+      \item $3333331$ is prime
+\pause
+      \item $33333331$ is prime
+    \end{itemize}
+\pause
+    $$333333331 = 17\times 19607843$$
+  \end{block}
+\end{frame}
+
+\begin{frame}{Strong Law of Small Numbers}
+  \begin{block}{Example (Diophantine Equations)}
+    For a long time, it was conjectured that
+    $$x^4 + y^4 + z^4 = w^4$$
+    has no nonzero **integer-valued** solutions.
+  \end{block}
+\pause
+  \begin{block}{First counter-example}
+    $$95800^4+217519^4+414560^4=4224814^4$$
+  \end{block}
+\end{frame}
+
+\begin{frame}{Strong Law of Small Numbers}
+\pause
+  \begin{block}{Example (Polya's Conjecture)}
+\pause
+    An integer like $50 = 2\times 5\times 5$ has an \textbf{odd number of prime factors}.\\
+\pause
+    An integer like $16 = 2\times 2\times 2\times 2$ has an \textbf{even number of prime factors}.\\
+\pause
+    \textbf{Polya:} for any integer $n$, at least half of the integers $1 < k < n$ have an odd number of prime factors.
+  \end{block}
+\pause
+  \begin{block}{First counter-example}
+    $$n=906150257$$
+  \end{block}
+\end{frame}
+
+
+\subsection{Wrapping up}
+
+\begin{frame}{Discussion}
+\pause
+  \begin{block}{Conjecture vs. Proof}
+    In science evidence is enough.
+    In mathematics, we require proof because evidence can mislead us.
+  \end{block}
+\pause
+  \begin{block}{Question 1}
+    Is the best first move on a $3\times n$ easy to predict?
+  \end{block}
+\pause
+  \begin{block}{Question 2}
+    What does the Strong Law of Small Numbers mean in your own words?
+    Can you think of any examples of the Strong Law of Small Numbers in action?
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{Question of the Day}
+\pause
+  \begin{block}{Puzzle}
+    Suppose you start with a $3\times 4$ board.
+    How many possible board shapes can we make by doing only Chomp moves.
+  \end{block}
+\pause
+  \begin{block}{Activity (20 mins)}
+    Discuss the puzzle with your neighbors.  What is the solution?
+  \end{block}
+\end{frame}
+
+\begin{frame}{Final thoughts}
+  \begin{block}{Reflection}
+    \begin{itemize}
+\pause
+      \item Looking at the Chomp data above, come up with your own Conjecure about the best first move on a $3\times n$ Chomp board.
+\pause
+      \item Describe the Strong Law of Small Numbers in your own terms.  What does it say about evidence in mathematics.  Does it mean that evidence is useless?
+    \end{itemize}
+  \end{block}
+\begin{center}
+Submit your responses by \textbf{Tonight!}
+\end{center}
+\end{frame}
+
+
+\end{document}
+
+

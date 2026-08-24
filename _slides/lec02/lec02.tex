@@ -1,0 +1,341 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This file is a template using the "beamer" package to create slides for a talk or presentation
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+% MODIFIED by Jonathan Kew, 2008-07-06
+% The header comments and encoding in this file were modified for inclusion with TeXworks.
+% The content is otherwise unchanged from the original distributed with the beamer package.
+
+\documentclass{beamer}
+\setbeamercovered{invisible}
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+\usepackage{qrcode}
+\usepackage{hyperref}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%%% MATH RELATED
+
+\title{MATH 180 Strategies of Problem Solving} 
+\subtitle
+{} % (optional)
+
+\author[W.R. Casper] % (optional, use only with lots of authors)
+{W.R. Casper}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[California State University Fullerton] % (optional, but mostly needed)
+{
+  Department of Mathematics\\
+  California State University Fullerton}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{SoPS Lecture 2}
+\subsection{Building conjectures}
+
+\begin{frame}{Pinching Pennies}
+  \begin{block}{Rules}
+    \begin{itemize}
+      \item arrange pennies in four piles
+      \item turn: take one or more pennies \emph{but}
+      \item take only from one pile per turn
+      \item must take at least one penny
+      \item person who takes last penny wins
+    \end{itemize}
+  \end{block}
+\pause
+  \begin{block}{Activity (20 mins)}
+    \begin{itemize}
+\pause
+      \item split into pairs or groups of 3
+\pause
+      \item use small piles ($\leq 4$ coins per pile)
+\pause
+      \item {\color{red}record data:} initial board, who won? 
+\pause
+      \item try to find {\color{blue}patterns}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Pinching Pennies: Debrief}
+\pause
+\textbf{Let's combine the data ...}
+\pause
+  \begin{block}{Question}
+    What do the losing positions have in common?
+  \end{block}
+\pause
+  \begin{block}{Submit your conjecture:}
+    \begin{center}
+      \qrcode[hyperlink,height=2cm]{https://padlet.com/williamrileycasper/conjectures-for-losing-positions-33ai54j4kifc9hx6}
+    \end{center}
+  \end{block}
+\pause
+  \begin{center}
+    There seems to be some mysterious math behind the scenes...
+  \end{center}
+\end{frame}
+
+\subsection{Expert play}
+
+\begin{frame}{Vocabulary}
+\pause
+  \begin{block}{Binary number}
+    A \textbf{binary number} is an expression like
+      $$101_2,\quad001101_2,\quad 110100_2,\quad 1010101_2$$
+  \end{block}
+\pause
+  \begin{block}{Binary vs decimal}
+    \textbf{Binary numbers} are another way of writing natural numbers
+      $$(b_r\dots b_3b_2b_1b_0)_2 = b_0 + 2b_1 + 4b_2 + 8b_3 + \dots + 2^rb_r$$
+  \end{block}
+\pause
+  \begin{block}{Examples}
+\pause
+    $2 = 10_2 = 010_2 = 0010_2$\\
+\pause
+    $7 = 111_2,\quad 4 = 100_2, \quad 13 = 1101_2$
+  \end{block}
+\end{frame}
+
+\begin{frame}{Try it yourself}
+\pause
+  \begin{block}{Question 1}
+    What natural number is
+      $$10110_2$$
+  \end{block}
+\pause
+  \begin{block}{Question 2}
+    What natural number is
+      $$101101101_2$$
+  \end{block}
+\pause
+  \begin{block}{Question 3}
+    What binary number is the same as the natural number $2025$?
+  \end{block}
+\end{frame}
+
+\begin{frame}{Observations}
+\pause
+  \begin{block}{Losing states}
+    Some losing states for {\color{blue}Player 1}
+    $$(3,2,1),\quad(4,6,2),\quad (3,3,0)$$
+  \end{block}
+\pause
+  \begin{block}{Converted to binary}
+    $$(011_2,010_2,001_2),\quad(100_2,110_2,010_2),\quad (011_2,011_2,000_2)$$
+  \end{block}
+\pause
+  \begin{block}{Question}
+    Any patterns?
+  \end{block}
+\end{frame}
+
+\begin{frame}{Vocabulary}
+\pause
+  \begin{block}{binary XOR}
+\pause
+    The operation $\oplus$ called \textbf{binary XOR} adds binary numbers entrywise modulo $2$:
+    $$110011_2 \oplus 101010_2 = 011001_2$$
+  \end{block}
+\pause
+  \begin{block}{Losing states}
+\pause
+    $$(011_2,010_2,001_2)\rightarrow 011_2\oplus 010_2\oplus 001_2 = 000_2$$
+\pause
+    $$(100_2,110_2,010_2)\rightarrow 100_2\oplus 110_2\oplus 010_2 = 000_2$$
+\pause
+    $$(011_2,011_2,000_2)\rightarrow 011_2\oplus 011_2\oplus 000_2 = 000_2$$
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect play}
+\pause
+  \begin{block}{Theorem}
+    If the binary XOR sum of the three piles of pennies is $0$, then it is a losing position for {\color{blue}Player 1}
+  \end{block}
+\pause
+  \begin{block}{Proof}
+    If the binary XOR sum is zero, the next move will make it not be zero.\\
+\pause
+    If the binary XOR sum is not zero, then there is a move to make it zero.\\
+\pause
+    Whatever {\color{blue}Player 1} does, he will leave the sum nonzero.\\
+\pause
+    Then {\color{red}Player 2} should make the sum zero again.\\
+\pause
+    Eventually we run out of stones, and that must happen on a turn when the sum becomes zero.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Wreck the professor}
+  \begin{block}{Wreck the professor}
+    Start with the initial piles $(5,7,9)$.
+  \end{block}
+  \begin{center}
+    Fight me!
+  \end{center}
+\end{frame}
+
+\begin{frame}{Break time!}
+  \begin{block}{Activity (5 minutes)}
+    \begin{itemize}
+      \item get up, stretch get a cup of coffee
+      \item chat up your neighbor, introduce yourself
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Practice makes perfect}
+\pause
+  \begin{block}{Activity (20 mins)}
+    \begin{itemize}
+\pause
+      \item split into pairs or groups of 3
+\pause
+      \item use medium-sized piles ($7$-ish coins per pile)
+\pause
+      \item look at the starting state and figure out who will win with perfect play
+\pause
+      \item play the game through and see if you were right
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\subsection{Wrapping up}
+
+\begin{frame}{Discussion}
+\pause
+  \begin{block}{Invariants}
+    The binary XOR sum is an example of an \textbf{invariant}, something that one of the players can keep fixed. 
+  \end{block}
+\pause
+  \begin{block}{Question 1}
+    What did we learn today about invariants?
+  \end{block}
+\pause
+  \begin{block}{Question 2}
+    Faced with a new game, what strategy might we try using to determine perfect play?
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{Question of the Day}
+\pause
+  \begin{block}{Puzzle}
+    You have 21 pennies. On each turn, a player removes 1, 2, or 3 coins.  The player who takes the last coin wins. 
+    Is the start a winning position for {\color{blue}Player 1} or {\color{red}Player 2}?
+  \end{block}
+\pause
+  \begin{block}{Activity (10 mins)}
+    Discuss the puzzle with your neighbors.  What is the solution?
+  \end{block}
+\end{frame}
+
+\begin{frame}{Final thoughts}
+  \begin{block}{Reflection}
+    \begin{itemize}
+      \item What similarities and differences did you see between the "proof" we did today, vs. last class?
+      \item Explain which player has a winning strategy in the previous puzzle and carefully describe what their strategy should be.
+    \end{itemize}
+  \end{block}
+\begin{center}
+Submit your responses by \textbf{Tonight!}
+\end{center}
+\end{frame}
+
+
+\end{document}
+
+

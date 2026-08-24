@@ -1,0 +1,5 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{SoPS Lecture 7}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Battleship with Radar}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Firing algorithms}{17}{0}{1}
+\beamer@subsectionintoc {1}{3}{Wrapping up}{23}{0}{1}

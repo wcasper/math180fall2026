@@ -1,0 +1,486 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This file is a template using the "beamer" package to create slides for a talk or presentation
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+% MODIFIED by Jonathan Kew, 2008-07-06
+% The header comments and encoding in this file were modified for inclusion with TeXworks.
+% The content is otherwise unchanged from the original distributed with the beamer package.
+
+\documentclass{beamer}
+\setbeamercovered{invisible}
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+\usepackage{qrcode}
+\usepackage{hyperref}
+\usepackage{ytableau}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%%% MATH RELATED
+
+\title{MATH 180 Strategies of Problem Solving} 
+\subtitle
+{} % (optional)
+
+\author[W.R. Casper] % (optional, use only with lots of authors)
+{W.R. Casper}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[California State University Fullerton] % (optional, but mostly needed)
+{
+  Department of Mathematics\\
+  California State University Fullerton}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{SoPS Lecture 3}
+\subsection{Chomp}
+
+\begin{frame}{Chomp}
+  \begin{block}{Rules}
+    \begin{itemize}
+      \item create a $4\times 5$ square grid (chocolate bar)
+    \end{itemize}
+    \begin{center}
+      \ydiagram{5,5,5,5}
+    \end{center}
+    \begin{itemize}
+      \item turn: player takes a "bite" of the chocolate bar 
+      \item bite: select a square and remove it along with any squares either above or to the right (or both)
+      \item person who eats the (poisoned) last square loses
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Chomp}
+  \begin{block}{Sample turn (P1)}
+    \begin{center}
+      \ydiagram{3,5,5,5}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Chomp}
+  \begin{block}{Sample turn (P2)}
+    \begin{center}
+      \ydiagram{3,4,4,5}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Chomp}
+  \begin{block}{Sample turn (P1)}
+    \begin{center}
+      \ydiagram{2,2,2,5}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Chomp}
+  \begin{block}{Sample turn (P2)}
+    \begin{center}
+      \ydiagram{1,1,1,5}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Chomp}
+  \begin{block}{Sample turn (P1)}
+    \begin{center}
+      \ydiagram{1,1,1,1}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Chomp}
+  \begin{block}{Sample turn (P2)}
+    \begin{center}
+      \ydiagram{0,0,0,1}
+    \end{center}
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{Chomp}
+  \begin{block}{Activity (20 mins)}
+    \begin{itemize}
+\pause
+      \item split into \textbf{pairs}
+\pause
+      \item try plaing on a $4\times 5$ board
+\pause
+      \item {\color{red}record data:} did the first or second player win?
+\pause
+      \item {\color{red}record data:} what board states are losing positions?
+\pause
+      \item try to find {\color{blue}patterns}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Chomp: Debrief}
+\pause
+  \begin{block}{Question}
+    Upload a picture of the interesting losing positions that you found
+  \end{block}
+\pause
+  \begin{block}{Submit your findings:}
+    \begin{center}
+      \qrcode[hyperlink,height=2cm]{https://padlet.com/williamrileycasper/conjectures-for-losing-positions-33ai54j4kifc9hx6}
+    \end{center}
+  \end{block}
+\pause
+  \begin{block}{Discussion:}
+    Is it better to be {\color{blue}Player 1} or {\color{red}Player 2}?
+  \end{block}
+\end{frame}
+
+\subsection{Strategy Stealing}
+
+\begin{frame}{Vocabulary}
+\pause
+  \begin{block}{Definition}
+\pause
+    A \textbf{winning board} is a board state where the next player to play can force a win.\\
+\pause
+    A \textbf{losing board} is a board state where the next player to play can be forced to lose.
+  \end{block}
+\pause
+  \begin{block}{Observations}
+    \begin{itemize}
+\pause
+      \item every board is either a \textbf{winning board} or \textbf{losing board}
+\pause
+      \item \textbf{winning board} means there's a move to make it into a \textbf{losing board}
+\pause
+      \item \textbf{losing board} means \emph{every} move makes it into a \textbf{winning board}
+    \end{itemize}
+  \end{block}
+  
+\end{frame}
+
+\begin{frame}{Examples}
+  \begin{block}{Losing board}
+    \begin{center}
+      \ydiagram{1}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Examples}
+  \begin{block}{Winning board}
+    \begin{center}
+      \ydiagram{3}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Examples}
+  \begin{block}{Losing board}
+    \begin{center}
+      \ydiagram{1,2}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Examples}
+  \begin{block}{Winning board}
+    \begin{center}
+      \ydiagram{2,2}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Player 1 Wins!}
+\pause
+  \begin{block}{Theorem}
+    The starting rectangle is a winning board.\\
+    In other words, {\color{blue} Player 1} can guarantee a win with perfect play.
+  \end{block}
+\pause
+  \begin{block}{Why?}
+    The proof strategy is called a \textbf{strategy-stealing argument}.\\
+    Assume it's instead a \textbf{losing board}.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Strategy Stealing Argument}
+\pause
+  \begin{block}{Proof}
+\pause
+    We get to pick the first move for {\color{blue}Player 1}
+\pause
+    \begin{center}
+      \ydiagram{4,5,5,5}
+    \end{center}
+\pause
+    Then this should be a \textbf{winning board} for the next to play.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Strategy Stealing Argument}
+  \begin{block}{Proof}
+    There should be a move turning it into a \textbf{losing board}\\
+\pause
+    Guess {\color{red}Player 2}'s move:
+    \begin{center}
+      \ydiagram{3,3,5,5}
+    \end{center}
+\pause
+    So if we're right, this is now a \textbf{losing board}.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Strategy Stealing Argument}
+  \begin{block}{Proof}
+    Restart the game!\\
+\pause
+    Have {\color{blue}Player 1} steal {\color{red}Player 2}'s strategy.\\
+\pause
+    Make {\color{blue}Player 1}'s first move be
+    \begin{center}
+      \ydiagram{3,3,5,5}
+    \end{center}
+\pause
+    Then now is a losing board for {\color{red}Player 2}.  Impossible!
+  \end{block}
+\end{frame}
+
+\begin{frame}{Strategy Stealing Argument}
+  \begin{block}{Proof}
+    We must have guessed wrong about {\color{red}Player 2}'s move.\\
+\pause
+    Re-guess {\color{red}Player 2}'s move:
+    \begin{center}
+      \ydiagram{3,3,3,5}
+    \end{center}
+\pause
+    So if we're right, this is now a \textbf{losing board}.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Strategy Stealing Argument}
+  \begin{block}{Proof}
+    Restart the game!\\
+\pause
+    Have {\color{blue}Player 1} steal {\color{red}Player 2}'s strategy.\\
+\pause
+    Make {\color{blue}Player 1}'s first move be
+    \begin{center}
+      \ydiagram{3,3,3,5}
+    \end{center}
+\pause
+    Then now is a losing board for {\color{red}Player 2}.  Impossible!
+  \end{block}
+\end{frame}
+
+\begin{frame}{Strategy Stealing Argument}
+  \begin{block}{Proof}
+\pause
+    Suppose {\color{red}Player 2} has a move making a \textbf{losing board}.\\
+\pause
+    Then {\color{blue}Player 1} could have done that as their first move instead.\\
+\pause
+    Therefore {\color{blue}Player 1} must be the one able to force a win!
+  \end{block}
+\end{frame}
+
+\begin{frame}{Discussion}
+\pause
+  \begin{block}{Question}
+    Does this mean that {\color{blue}Player 1}'s first move should be to take just the upper right square?
+  \end{block}
+\pause
+  \begin{block}{Question}
+    Our proof that {\color{blue}Player 1} can force a win was \textbf{non-constructive}.  We proved a winning strategy exists without finding it.  Is this satisfying?
+  \end{block}
+\end{frame}
+
+\begin{frame}{Break time!}
+  \begin{block}{Activity (5 minutes)}
+    \begin{itemize}
+      \item get up, stretch get a cup of coffee
+      \item chat up your neighbor, introduce yourself
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+\pause
+  \begin{block}{Question}
+    What is the perfect strategy for $1\times 7$ Chomp?
+    \begin{center}
+      \ydiagram{7}
+    \end{center}
+  \end{block}
+\pause
+  \begin{block}{Question}
+    What is the perfect strategy for $1\times n$ Chomp?
+    \begin{center}
+      \ydiagram{7}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Perfect Strategy}
+\pause
+  \begin{block}{Activity (20 mins)}
+    Break up into pairs and play Chomp with different board sizes.\\
+\pause
+    Can you find a perfect strategy for $2\times n$ Chomp?
+  \end{block}
+\end{frame}
+
+\subsection{Wrapping up}
+
+\begin{frame}{Discussion}
+\pause
+  \begin{block}{Existence vs. Construction}
+    In a lot of situations, we can prove something exists, long before we figure out how to find it (if ever).
+    If our proof actually shows us how to find it, we call it a \textbf{constructive proof}.
+  \end{block}
+\pause
+  \begin{block}{Question 1}
+    How did our proof today compare to our previous proofs in this class?
+  \end{block}
+\pause
+  \begin{block}{Question 2}
+    Can you think of any situations where knowing something exists could be helpful, even if you don't know how to find it?
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{Question of the Day}
+\pause
+  \begin{block}{Puzzle}
+    Start with the number $216$.\\
+    On each turn, players choose a natural number which divides $216$.\\
+    Once a number has been chosen, neither it nor any of it's divisors may be chosen.\\
+    The player who is forced to choose $216$ loses.\\ What's the best first number to choose?
+  \end{block}
+\pause
+  \begin{block}{Activity (10 mins)}
+    Discuss the puzzle with your neighbors.  What is the solution?
+  \end{block}
+\end{frame}
+
+\begin{frame}{Question of the Day}
+\pause
+  \begin{block}{Puzzle}
+    This was just $4\times 4$ Chomp!
+    $$\begin{array}{|c|c|c|c|}\hline
+    8 &  4 &  2 & 1\\\hline
+   24 & 12 &  6 & 3\\\hline
+   72 & 36 & 18 & 9\\\hline
+  216 &108 & 54 & 27\\\hline
+    \end{array}$$
+  \end{block}
+\pause
+  \begin{block}{Activity (10 mins)}
+    Discuss the puzzle with your neighbors.  What is the solution?
+  \end{block}
+\end{frame}
+
+\begin{frame}{Final thoughts}
+  \begin{block}{Reflection}
+    \begin{itemize}
+      \item Look up the Intermediate Value Theorem in your calculus textbook (or online).  What is it proving exists?  Why is this proof non-constructive?
+    \end{itemize}
+  \end{block}
+\begin{center}
+Submit your responses by \textbf{Tonight!}
+\end{center}
+\end{frame}
+
+
+\end{document}
+
+
