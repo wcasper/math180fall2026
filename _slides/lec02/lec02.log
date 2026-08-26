@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  25 AUG 2026 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  26 AUG 2026 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1255,7 +1255,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 168.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 169.
 
 
 
@@ -1411,21 +1411,21 @@ s-losing-positions-h5xyswjj3ku3iqof" in version 6-M as previously calculated.>
 \tf@snm=\write8
 \openout8 = `lec02.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 339.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 339.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
  (./lec02.aux
 <Reading QR code for "https://padlet.com/williamrileycasper/pinching-pennies-lo
 sing-positions-h5xyswjj3ku3iqof" at level 6-M from aux file.>
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 339.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 339.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
 Package rerunfilecheck Info: File `lec02.out' has not changed.
 (rerunfilecheck)             Checksum: B98FB0E0C87B05FAC9E67FEF8A8DB7FB;240.
  ) 
 Here is how much of TeX's memory you used:
  19908 strings out of 494847
  363275 string characters out of 6179079
- 528179 words of memory out of 5000000
+ 529179 words of memory out of 5000000
  22653 multiletter control sequences out of 15000+600000
  33223 words of font info for 50 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -1437,7 +1437,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist
 /type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/h
 elvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
 o8a.pfb>
-Output written on lec02.pdf (60 pages, 230199 bytes).
+Output written on lec02.pdf (60 pages, 231257 bytes).
 PDF statistics:
  1952 PDF objects out of 2073 (max. 8388607)
  1847 compressed objects within 19 object streams
