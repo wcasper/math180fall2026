@@ -16,11 +16,11 @@ permalink: /syllabus
 **Course website:** the main course website will be <a target="_parent" href="https://wcasper.github.io/math180fall2026">Github Pages site (link)</a>, but we will also use the Canvas website for submitting assignments and maintaining grades
 
 ## Course meeting information
-* Section: 05
-* Course ID: 19502
-* Time: MW 4:00PM-05:50PM
+* Section: 01 and 05
+* Course ID: 19770 and 20884
+* Time: MW 10:AM-11:50AM (section 1) and 4:00PM-05:50PM (section 5)
 * Meeting Dates: 08/26/2024-12/13/2024
-* Location: MH 553
+* Location: MH 380 (section 1) and MH 553 (section 5)
 
 ## Course catalog description
 Fundamentals of problem solving via contest problems, logic puzzles, games, riddles, paradoxes. Mathematical content may include symbolic logic, sets, mappings, cardinality, infinite sets, graph theory, modular arithmetic, probability, combinatorics.
@@ -123,7 +123,8 @@ ___
 **Final Exam**
 The final exam will be cumulative with both written and computational parts, and will account for 20% of your grade.
 
-* The Final Exam  is **5-7PM** on **Wednesday, December 17**
+* The Final Exam for section 1 is **11AM-1PM** on **Monday, December 14**
+* The Final Exam for section 5 is **5PM-7PM** on **Wednesday, December 16**
 
 ___
 
