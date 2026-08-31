@@ -9,7 +9,7 @@ title:  Lecture 4
 
 ### Slides
 
-* [Link to slides](http://wcasper.github.io/math180fall2025/slides/lec04/lec04.pdf)
+* [Link to slides](http://wcasper.github.io/math180fall2026/slides/lec04/lec04.pdf)
 
 
 
