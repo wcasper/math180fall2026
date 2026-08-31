@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  7 SEP 2025 00:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  31 AUG 2026 10:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1064,8 +1064,8 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )) (./lec03.aux
-<Reading QR code for "https://padlet.com/williamrileycasper/conjectures-for-los
-ing-positions-33ai54j4kifc9hx6" at level 6-M from aux file.>
+<Reading QR code for "https://padlet.com/williamrileycasper/pinching-pennies-lo
+sing-positions-h5xyswjj3ku3iqof" at level 6-M from aux file.>
 )
 \openout1 = `lec03.aux'.
 
@@ -1293,41 +1293,41 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 ]
 
 
-<QR code requested for "https://padlet.com/williamrileycasper/conjectures-for-l
-osing-positions-33ai54j4kifc9hx6" in version 0-M.>
+<QR code requested for "https://padlet.com/williamrileycasper/pinching-pennies-
+losing-positions-h5xyswjj3ku3iqof" in version 0-M.>
 
-<Copying the QR code for "https://padlet.com/williamrileycasper/conjectures-for
--losing-positions-33ai54j4kifc9hx6" in version 6-M as previously calculated.>
+<Copying the QR code for "https://padlet.com/williamrileycasper/pinching-pennie
+s-losing-positions-h5xyswjj3ku3iqof" in version 6-M as previously calculated.>
 [17
 
 ]
 
 
-<QR code requested for "https://padlet.com/williamrileycasper/conjectures-for-l
-osing-positions-33ai54j4kifc9hx6" in version 0-M.>
+<QR code requested for "https://padlet.com/williamrileycasper/pinching-pennies-
+losing-positions-h5xyswjj3ku3iqof" in version 0-M.>
 
-<Copying the QR code for "https://padlet.com/williamrileycasper/conjectures-for
--losing-positions-33ai54j4kifc9hx6" in version 6-M as previously calculated.>
+<Copying the QR code for "https://padlet.com/williamrileycasper/pinching-pennie
+s-losing-positions-h5xyswjj3ku3iqof" in version 6-M as previously calculated.>
 [18
 
 ]
 
 
-<QR code requested for "https://padlet.com/williamrileycasper/conjectures-for-l
-osing-positions-33ai54j4kifc9hx6" in version 0-M.>
+<QR code requested for "https://padlet.com/williamrileycasper/pinching-pennies-
+losing-positions-h5xyswjj3ku3iqof" in version 0-M.>
 
-<Copying the QR code for "https://padlet.com/williamrileycasper/conjectures-for
--losing-positions-33ai54j4kifc9hx6" in version 6-M as previously calculated.>
+<Copying the QR code for "https://padlet.com/williamrileycasper/pinching-pennie
+s-losing-positions-h5xyswjj3ku3iqof" in version 6-M as previously calculated.>
 [19
 
 ]
 
 
-<QR code requested for "https://padlet.com/williamrileycasper/conjectures-for-l
-osing-positions-33ai54j4kifc9hx6" in version 0-M.>
+<QR code requested for "https://padlet.com/williamrileycasper/pinching-pennies-
+losing-positions-h5xyswjj3ku3iqof" in version 0-M.>
 
-<Copying the QR code for "https://padlet.com/williamrileycasper/conjectures-for
--losing-positions-33ai54j4kifc9hx6" in version 6-M as previously calculated.>
+<Copying the QR code for "https://padlet.com/williamrileycasper/pinching-pennie
+s-losing-positions-h5xyswjj3ku3iqof" in version 6-M as previously calculated.>
 [20
 
 ] (./lec03.toc) [21
@@ -1469,8 +1469,8 @@ osing-positions-33ai54j4kifc9hx6" in version 0-M.>
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 484.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 484.
  (./lec03.aux
-<Reading QR code for "https://padlet.com/williamrileycasper/conjectures-for-los
-ing-positions-33ai54j4kifc9hx6" at level 6-M from aux file.>
+<Reading QR code for "https://padlet.com/williamrileycasper/pinching-pennies-lo
+sing-positions-h5xyswjj3ku3iqof" at level 6-M from aux file.>
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 484.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 484.
@@ -1479,18 +1479,18 @@ Package rerunfilecheck Info: File `lec03.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  20165 strings out of 494847
- 368881 string characters out of 6179079
- 534679 words of memory out of 5000000
+ 368883 string characters out of 6179079
+ 534701 words of memory out of 5000000
  22857 multiletter control sequences out of 15000+600000
  32006 words of font info for 49 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 56i,19n,65p,1934b,709s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,65p,1936b,709s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/h
 elvetic/uhvro8a.pfb>
-Output written on lec03.pdf (81 pages, 260989 bytes).
+Output written on lec03.pdf (81 pages, 260437 bytes).
 PDF statistics:
  2592 PDF objects out of 2984 (max. 8388607)
  2462 compressed objects within 25 object streams
