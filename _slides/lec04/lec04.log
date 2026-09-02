@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  2 SEP 2026 11:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  2 SEP 2026 12:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1515,7 +1515,7 @@ s-losing-positions-h5xyswjj3ku3iqof" in version 6-M as previously calculated.>
 
 ] [100
 
-] (./lec04.toc) [101
+] [101
 
 ] [102
 
@@ -1529,14 +1529,43 @@ s-losing-positions-h5xyswjj3ku3iqof" in version 6-M as previously calculated.>
 
 ] [107
 
-]
-[108
+] [108
 
 ] [109
 
 ] [110
 
-] [111
+]
+[111
+
+] [112
+
+] [113
+
+] [114
+
+] (./lec04.toc) [115
+
+] [116
+
+] [117
+
+] [118
+
+] [119
+
+] [120
+
+]
+[121
+
+] [122
+
+] [123
+
+] [124
+
+] [125
 
 ]
 \tf@nav=\write6
@@ -1548,22 +1577,22 @@ s-losing-positions-h5xyswjj3ku3iqof" in version 6-M as previously calculated.>
 \tf@snm=\write8
 \openout8 = `lec04.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 839.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 839.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 874.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 874.
  (./lec04.aux
 <Reading QR code for "https://padlet.com/williamrileycasper/pinching-pennies-lo
 sing-positions-h5xyswjj3ku3iqof" at level 6-M from aux file.>
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 839.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 839.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 874.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 874.
 Package rerunfilecheck Info: File `lec04.out' has not changed.
-(rerunfilecheck)             Checksum: 295FCFE3CD1F74EB20B3D16DF49E854F;245.
+(rerunfilecheck)             Checksum: 7DB7BCE1037174BCE0C0F3362C6416B2;245.
  ) 
 Here is how much of TeX's memory you used:
- 20385 strings out of 494847
- 371222 string characters out of 6179079
+ 20421 strings out of 494847
+ 371707 string characters out of 6179079
  528191 words of memory out of 5000000
- 23008 multiletter control sequences out of 15000+600000
+ 23016 multiletter control sequences out of 15000+600000
  51002 words of font info for 75 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  56i,22n,65p,1936b,722s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1575,10 +1604,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist
 urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic
 /uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb
 >
-Output written on lec04.pdf (111 pages, 362163 bytes).
+Output written on lec04.pdf (125 pages, 403031 bytes).
 PDF statistics:
- 3530 PDF objects out of 3580 (max. 8388607)
- 3358 compressed objects within 34 object streams
- 227 named destinations out of 1000 (max. 500000)
+ 3962 PDF objects out of 4296 (max. 8388607)
+ 3772 compressed objects within 38 object streams
+ 255 named destinations out of 1000 (max. 500000)
  135 words of extra memory for PDF output out of 10000 (max. 10000000)
 
