@@ -122,7 +122,7 @@
 % - Talk about 30s to 2min per frame. So there should be between about
 %   15 and 30 frames, all told.
 
-\section{SoPS Lecture 6}
+\section{SoPS Lecture 5}
 \subsection{Battleship}
 
 
@@ -130,182 +130,188 @@
   \begin{block}{Last time}
     \begin{itemize}
 \pause
-      \item we explored Battleship
+      \item we explored $3\times 3$ Chomp
 \pause
-      \item we looked at basic probability
+      \item we learned \textbf{proof by cases}
 \pause
-      \item we learned how to apply probability to Battleship
+      \item we learned the \textbf{Strong Law of Small Numbers} and saw examples
     \end{itemize}
   \end{block}
 \end{frame}
 
-\begin{frame}{Battleship with Radar}
-  \begin{block}{Radar Systems:}
-    In Battleship with Radar, both players have \textbf{radar data} giving the occupied spots in each row and column.
-  \end{block}
-\pause
-  \begin{block}{Radar Example:}
-    {\tiny\begin{center}
-      \begin{ytableau}
-        x &   &   &   &   & x &   &   &   &   \\
-        x &   & x & x &   & x &   &   &   &   \\
-        x &   &   &   &   & x &   &   &   &   \\
-          &   & x &   &   & x &   &   &   &   \\
-          &   & x &   &   & x &   &   &   &   \\
-          &   & x &   &   &   &   &   &   &   \\
-          &   & x &   &   & x & x & x &   &   \\
-          &   &   &   &   &   &   &   &   &   \\
-          &   &   &   &   &   &   &   &   &   \\
-          &   &   &   &   &   &   &   &   &   
-      \end{ytableau}
-    \end{center}}
-\pause
-  Rows: $2,4,2,2,2,1,4,0,0,0$\ \ \ \ 
-\pause
-  Cols: $3,0,5,1,0,6,1,1,0,0$
-  \end{block}
-\end{frame}
-
-\begin{frame}{Battleship with Radar}
-  \begin{block}{Activity (30 minutes):}
-    Play Battleship with Radar
+\begin{frame}{Battleship Introduction}
+  \begin{center}
+    \includegraphics[width=0.4\linewidth]{fig/battleship.jpg}
+  \end{center}
+  \begin{block}{Activity (30 minutes)}
     \begin{itemize}
-      \item set up the boards normally
-      \item then tell your opponent the radar data
-      \item then play Battleship normally
-    \end{itemize}
-  \end{block}
 \pause
-  \begin{block}{Challenge:}
-    \begin{itemize}
-      \item record initial setups
-      \item what makes a good setup?
+      \item review the rules of Battleship
+\pause
+      \item split into pairs and play some games!
+\pause
+      \item can you observe any useful strategies?
     \end{itemize}
   \end{block}
 \end{frame}
 
-\begin{frame}{Radar: Debrief}
+\begin{frame}{Battleship Discussion}
 \pause
-  \begin{block}{Submit pictures of good/bad setups:}
+  \begin{block}{Question 1}
+    How does the game Battleship differ from other games we have played in this class.
+    How is it similar?
+  \end{block}
+\pause
+  \begin{block}{Question 2}
+    What mathematical tools could be useful in exploring the game Battleship?
+  \end{block}
+\end{frame}
+
+\subsection{Probability and Expectation Values}
+
+\begin{frame}{Probability Intro}
+  \begin{block}{Vocabulary}
+    In \textbf{probability theory} we study \textbf{experiments}, like flipping a coin, rolling a die, or drawing a card.\\
+    \begin{itemize}
+\pause
+      \item the set $\Omega$ of all possible outcomes is the \textbf{sample space}
+\pause
+      \item subsets $E\subseteq \Omega$ are called \textbf{events}
+\pause
+      \item the \textbf{probability} of an event $E$ is
+      $$\mathbb{P}(E) = \frac{|E|}{|\Omega|}$$
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Probability Example}
+  \begin{block}{Rolling a Die}
+    Experiment: roll a six-sided die
+    \begin{itemize}
+\pause
+      \item the sample space is:
+      $$\Omega = \{1,2,3,4,5,6\}$$
+      \item the event of ``getting a 3" is $\{3\}$
+      {\small $$\mathbb{P}(\{3\}) = \frac{|\{3\}|}{|\Omega|} = \frac{1}{6}.$$}
+\pause
+      \item the event of ``getting an even number" is $\{2,4,6\}$
+      {\small $$\mathbb{P}(\{2,4,6\}) = \frac{|\{2,4,6\}|}{|\Omega|} = \frac{3}{6} = \frac{1}{2}.$$}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Probability Example}
+  \begin{block}{Drawing a Card}
+    Experiment: draw a card from a standard deck
+    \begin{itemize}
+\pause
+      \item what is the sample space?\\
+\pause
+        $\Omega = \{(2,\heartsuit),(3,\heartsuit),(4,\heartsuit),\dots,(K,\clubsuit),(A,\clubsuit)\}$
+\pause
+      \item what is the event "getting a face card in hearts"?\\
+\pause
+        $E = \{(J,\heartsuit),(Q,\heartsuit),(K,\heartsuit)\}$
+\pause
+      \item what is the probability of this event?\\
+\pause
+        $\mathbb{P}(E) = \frac{|E|}{|\Omega|} = \frac{3}{52}.$
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Probability Meaning}
+  \begin{block}{Real-world interpretation}
+    \begin{itemize}
+\pause
+      \item perform the same experiment a thousand times
+\pause
+      \item record how many times the outcome is in $E$
+\pause
+      \item fraction of times the outcome is in $E$ is approx. $\mathbb P(E)$
+\pause
+      \item more experiments -> closer to $\mathbb P(E)$
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Expectations in Battleship}
+Suppose we play mini-Battleship on a $5\times 5$ board, with a single $3\times 1$.
+\pause
+\begin{block}{Activity (2 minutes)}
+Draw a picture of a 5x5 board and secretly place a single $3\times 1$ ship on the board.\\
+\end{block}
+  \begin{block}{Submit your secret board:}
     \begin{center}
-      \qrcode[hyperlink,height=2cm]{https://padlet.com/williamrileycasper/conjectures-for-losing-positions-33ai54j4kifc9hx6}
+      \qrcode[hyperlink,height=2cm]{https://padlet.com/williamrileycasper/battleship-5x5-board-h5xyswjj3ku3iqof}
     \end{center}
   \end{block}
-\pause
-  \begin{center}
-    Is it possible to guess the entire fleet from radar?
-  \end{center}
 \end{frame}
 
-\subsection{Group assignment: Stealthy fleets}
 
-\begin{frame}{Inverse problems}
-  \begin{block}{Vocabulary}
-	The problem of determining a Battleship fleet from its X-ray data is an
-	example of an \textbf{inverse problem}.  More generally, inverse problems
-    arise when we try to reconstruct something from a set of observations.
-  \end{block}
+\begin{frame}{Probability in Battleship}
+Suppose we play mini-Battleship on a $5\times 5$ board, with a single $2\times 1$ destroyer which is placed randomly.
 \pause
-  \begin{block}{Natural questions:}
-    Given some $X$-ray data, we can ask:
-    \begin{itemize}
+\begin{block}{Question 1}
+How many things are in the sample space?
+\end{block}
 \pause
-      \item does a fleet with that data exist
-\pause
-      \item if so, how can we reconstruct it?
-\pause
-      \item is there only one possible fleet?
-    \end{itemize}
-  \end{block}
+\begin{block}{Question 2}
+What is the probability of a ship being in each spot?
+\end{block}
 \end{frame}
 
-\begin{frame}{Group assignments}
-\begin{block}{Group creation}
-  \begin{itemize}
+\begin{frame}{Expectations in Battleship}
+Suppose we play mini-Battleship on a $5\times 5$ board, with a single $3\times 1$ submarine which is placed randomly.
 \pause
-    \item create groups of $3-4$ people
+\begin{block}{Question 3}
+How many things are in the sample space?
+\end{block}
 \pause
-    \item take a minute to say hello to your members
-\pause
-    \item choose a group name
-\pause
-    \item self-sign up on Canvas
-  \end{itemize}
-  \end{block}
-\pause
-\begin{block}{Submitting assignments}
-  \begin{itemize}
-\pause
-    \item create a Google doc
-\pause
-    \item carefully type up answers / insert images
-\pause
-    \item submit on Canvas as a single PDF
-\pause
-    \item only one member needs to submit
-  \end{itemize}
-  \end{block}
+\begin{block}{Question 4}
+What is the probability of a ship being in each spot?
+\end{block}
 \end{frame}
 
-\begin{frame}{Existence}
-  \begin{block}{Problem 1}
-    \begin{enumerate}[(a)]
-\pause
-      \item Find a Battleship fleet with X-ray data\\
-      Rows: $4,4,4,4,1,0,0,0,0,0$\ \ \ \ 
-      Cols: $5,4,4,4,0,0,0,0,0,0$
-\pause
-      \item Find a Battleship fleet with X-ray data\\
-      Rows: $0,2,5,1,4,2,1,1,1,0$\ \ \ \ 
-      Cols: $0,1,2,1,2,5,1,1,1,3$
-    \end{enumerate}
-  \end{block}
-\end{frame}
-    
-\begin{frame}{Non-existence}
-  \begin{block}{Problem 2}
-    \begin{enumerate}[(a)]
-\pause
-      \item Explain why there is no fleet with the $X$-ray data
-      Rows: $4,2,4,3,3,0,0,0,0,0$\ \ \ \ 
-      Cols: $5,4,4,4,0,0,0,0,0,0$
-\pause
-      \item Explain why there is no fleet with the $X$-ray data
-      Rows: $0,2,2,5,4,4,0,0,0,0$\ \ \ \ 
-      Cols: $1,2,2,3,2,2,0,2,1,2$
-    \end{enumerate}
-  \end{block}
+\begin{frame}{Are humans random?}
+\begin{block}{Activity (5 minutes)}
+Compare the heat map for the $5\times 5$ with a single $3\times 1$ placed with the heat map obtained from aggregating the data from the class.  Discuss similarities or differences with your neighbors.
+\end{block}
 \end{frame}
 
-\begin{frame}{Non-uniqueness}
-  \begin{block}{Problem 3}
-    \begin{enumerate}[(a)]
+\subsection{Later game}
+
+\begin{frame}{Expectations in Battleship}
+Suppose we take our first shot at the center and we miss.
 \pause
-	  \item Find an example of a fleet whose position is uniquely determined by
-            its radar data.
-\pause
-	  \item Find an example of a fleet whose position is ``stealthy": whose
-			radar data actually describes several different potential fleet
-            positions.  Show the other fleets.
-    \end{enumerate}
-  \end{block}
+\begin{block}{Question 5}
+How do the probabilities change?
+\end{block}
 \end{frame}
-    
+
+\begin{frame}{Expectations in Battleship}
+Suppose we take our second shot at the space one above and to the right of the center and we miss again.
+\pause
+\begin{block}{Question 5}
+How do the probabilities change now?
+\end{block}
+\end{frame}
 
 \subsection{Wrapping up}
 
 \begin{frame}{Discussion}
 \pause
-  \begin{block}{Existence and uniqueness}
-    Many theorems in mathematics focus on the \textbf{existence} of something.  Given an equation, does a solution exist?  The natural follow-up is \textbf{uniqueness}.  Is there a unique solution to the problem or are there many?
+  \begin{block}{The presence of the unknown}
+	In Battleship, we no longer have \textbf{perfect information}.  There are
+    things one player knows that another does not.  This makes tools like probability 
   \end{block}
 \pause
   \begin{block}{Question 1}
-    Can you think of a real-world example of an inverse problem?
+    What does probability mean in your own words?
   \end{block}
 \pause
   \begin{block}{Question 2}
-    What are some necessary conditions on radar data for it to come from a Battleship fleet?
+    How can we use probability to play Battleship better?
   \end{block}
 \end{frame}
 
@@ -313,7 +319,8 @@
 \begin{frame}{Question of the Day}
 \pause
   \begin{block}{Puzzle}
-    Determine the number of ways to put a $2\times 1$ destroyer and a $3\times 1$ submarine on the $10\times 10$ Battleship board at the same time.
+    Suppose we play mini-Battleship on a $5\times 5$ board.
+    How many ways are there to place a $2\times 1$ Destroyer and a $3\times 1$ submarine on the board \textbf{simultaneoulsy}.
   \end{block}
 \end{frame}
 
@@ -321,9 +328,9 @@
   \begin{block}{Reflection}
     \begin{itemize}
 \pause
-      \item What situations in the real world can you think of where existence and uniqueness questions arise?
+      \item Can you think of any other games where probability my be an important tool?  Describe one.
 \pause
-      \item Can you think of any other interesting ways to modify the game Battleship?
+      \item What strategies would you suggest for placing the ships in Battleship?  What about firing the shots?
     \end{itemize}
   \end{block}
 \begin{center}
