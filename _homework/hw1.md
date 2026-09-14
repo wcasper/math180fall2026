@@ -16,19 +16,14 @@ Tips:
 
 ### Problems
 
-In many games, one immediate question that we would like to consider is how to count the number of possible boards.
-Oftentimes, getting an exact count by hand is very tough. Instead one can focus on getting **bounds** for the number of possible boards.
+**Problem 1:** Count the number of ways of placing a $$2\times 1$$ ship on a $$10\times 10$$ Battleship board.
 
-**Problem 1:** In Break the CUBE, we are putting three particular shapes into a $$3\times 3\times 3$$ grid.  Let's imagine that we're allowed to chop our shapes up into a bunch of single cubes.  Then we would end up with $$9$$ cubes.  How many ways can we put these $$9$$ cubes in to our $$3\times 3\times 3$$ grid?
+**Problem 2:** Count the number of ways of placing a $$3\times 1$$ ship on a $$10\times 10$$ Battleship board.
 
-Note: the number you get will be a **upper bound** for the total number of ways to arrange the shapes.
+**Problem 3:** Count the number of ways of placing both a $$2\times 1$$ and a $$3\times 1$$ ship on a $$10\times 10$$ Battleship board **simultaneously**.
 
-**Problem 2:** In Break the CUBE, we also have the rule that we can't have empty air underneath any of our shapes.  How many ways are there to put $$9$$ cubes into a $$3\times 3\times 3$$ grid with the constraint that there can't be any empty gaps between cubes and the bottom of the grid.
+**Problem 4:** Let $$F_n$$ be the number of ways of placing $$n$$ copies of a $$2\times 1$$ ship on a $$2\times n$$ board.
 
-Note: the number you get will be a sharper **upper bound** for the total number of ways to arrange the shapes.
-
-**Problem 3:** Get an even sharper **upper bound** for the total number of ways to arrange the shapes.  Explain what you are counting and why what you count is even closer than what you did in Problem 3.
-
-**Problem 4:** Obtain a nice **lower bound** for the total number of ways to arrange the shapes.  Explain what you are counting and why what you count is a **lower bound**.
-
-**Challenge:** Get the **exact** number of ways to arrange the shapes. 
+* (a) Determine the value of $$F_1$$, $$F_2$$, $$F_3$$, and $$F_4$$
+* (b) Try to find a pattern in the values.  Use the pattern to predict $$F_{12}$$.
+* (c) Come up with an argument that carefully explains why the pattern you found in (b) is true.
