@@ -123,66 +123,22 @@
 %   15 and 30 frames, all told.
 
 \section{SoPS Lecture 7}
-\subsection{Battleship with Radar}
+\subsection{Firing Algorithms}
 
 
 \begin{frame}{Review}
   \begin{block}{Last time}
     \begin{itemize}
 \pause
-      \item we explored Battleship with radar
+      \item we played Battleship
 \pause
-      \item we talked about inverse problems
+      \item we learned probability
 \pause
-      \item we discussed existence and uniqueness
+      \item we used probability in battleship
     \end{itemize}
   \end{block}
 \end{frame}
 
-\begin{frame}{Existence}
-  \begin{block}{Problem 1}
-    \begin{enumerate}[(a)]
-\pause
-      \item Find a Battleship fleet with X-ray data\\
-      Rows: $4,4,4,4,1,0,0,0,0,0$\ \ \ \ 
-      Cols: $5,4,4,4,0,0,0,0,0,0$
-\pause
-      \item Find a Battleship fleet with X-ray data\\
-      Rows: $0,2,5,1,4,2,1,1,1,0$\ \ \ \ 
-      Cols: $0,1,2,1,2,5,1,1,1,3$
-    \end{enumerate}
-  \end{block}
-\end{frame}
-    
-\begin{frame}{Non-existence}
-  \begin{block}{Problem 2}
-    \begin{enumerate}[(a)]
-\pause
-      \item Explain why there is no fleet with the $X$-ray data
-      Rows: $4,2,4,3,3,0,0,0,0,0$\ \ \ \ 
-      Cols: $5,4,4,4,0,0,0,0,0,0$
-\pause
-      \item Explain why there is no fleet with the $X$-ray data
-      Rows: $0,2,2,5,4,4,0,0,0,0$\ \ \ \ 
-      Cols: $1,2,2,3,2,2,0,2,1,2$
-    \end{enumerate}
-  \end{block}
-\end{frame}
-
-\begin{frame}{Non-uniqueness}
-  \begin{block}{Problem 3}
-    \begin{enumerate}[(a)]
-\pause
-	  \item Find an example of a fleet whose position is uniquely determined by
-            its radar data.
-\pause
-	  \item Find an example of a fleet whose position is ``stealthy": whose
-			radar data actually describes several different potential fleet
-            positions.  Show the other fleets.
-    \end{enumerate}
-  \end{block}
-\end{frame}
-    
 \subsection{Firing algorithms}
 
 \begin{frame}{Static firing algorithms}
@@ -192,23 +148,63 @@
     pattern, not changing whether each shot is a hit or a miss.
   \end{block}
 \pause
-  \begin{block}{Question}
-	Imagine we want to explore \emph{mostly} static firing algorithms, where if
-    you get a hit, it searches for the ship that you hit but otherwise fires in a
-    predetermined pattern.  What is the best pattern to sink a randomly generated fleet?
+  \begin{block}{Vocabulary}
+	A \textbf{dynamic firing algorithm} is one where the algorithm can take into account the current board state before choosing each shot.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Static Examples}
+\pause
+  \begin{block}{Static example:}
+    Fire the first shot at A1, the second shot at A2, the third shot at A3, and so on, proceeding left to right and top to bottom like reading a book.
+  \end{block}
+\pause
+  \begin{block}{Static example:}
+    Randomly choose a spot on the board and fire at it.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Dynamic Example}
+  \begin{block}{Dynamic example:}
+    Fire the first shot at E5.  For each subsequent shot, do the following:
+    \begin{itemize}
+      \item if you got a hit but didn't sink, continue a generic sinking algorithm
+      \item otherwise, use a Monte Carlo method on a computer with $1000$ samples to approximate the probabilities of each space being occupied.  Fire at the most probable spot.  If multiple spots have the same probability, randomly choose between them.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{Best static algorithm}
+\pause
+  \begin{block}{Problem:}
+    Can we find the best static algorithm?
+  \end{block}
+\pause
+  \begin{block}{Minor adjustment:}
+    We'll assume that after we get a hit, we run a generic sinking routine, and then return to the next available spot to fire at in our static algorithm.  (Technically, this makes this not quite a static algorithm).
   \end{block}
 \end{frame}
 
 \begin{frame}{Battleship simulator}
   \begin{block}{Activity}
-    Use the {\color{blue}\href{https://wcasper.github.io/math180fall2025/code/battleship/battleship-simulator}{Battleship Simulator (link)}} to explore different firing patterns.
-    Try to find the pattern that averages the least shots.
+    Use the {\color{blue}\href{https://wcasper.github.io/math180fall2026/code/battleship/battleship-simulator}{Battleship Simulator (link)}} to explore different static firing patterns.
+    Try to find the pattern that averages the least shots, averaged over thousands of simulations.
   \end{block}
-\pause
-  \begin{block}{Share your best pattern}
-    \begin{center}
-      \qrcode[hyperlink,height=2cm]{https://padlet.com/williamrileycasper/conjectures-for-losing-positions-33ai54j4kifc9hx6}
-    \end{center}
+\end{frame}
+
+\begin{frame}{Probability heat map}
+  \begin{block}{Heat map}
+    A \textbf{heat map} is a method of visualizing data that represents different values with colors.  We can use a heat map to visualize the probability distribution ofthe battleship fleet at different points in the grid at various stages in the game.
+  \end{block}
+  \begin{block}{Activity}
+    Use the {\color{blue}\href{https://wcasper.github.io/math180fall2026/code/heatmap/battleship-heatmap}{Battleship Heatmap (link)}} to explore different probabilities at different states of the game.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Battleship simulator}
+  \begin{block}{Activity}
+    Using both tools in unison, try to design a best possible static algorithm.
   \end{block}
 \end{frame}
 
@@ -226,7 +222,7 @@
   \end{block}
 \pause
   \begin{block}{Question 2}
-    Can you think of an interesting dynamic firing algorithm that might improve over    the static algorithms we found?
+    Can you think of an interesting dynamic firing algorithm that might improve over  the static algorithms we found?
   \end{block}
 \end{frame}
 
@@ -234,11 +230,7 @@
 \begin{frame}{Question of the Day}
 \pause
   \begin{block}{Puzzle}
-	Suppose there is an enemy submarine at an unknown location on the integer
-	number line, and each minute, it moves at an unknown, fixed integer
-	velocity.  You may fire one missile per minute somewhere on the number line
-	in an attempt to hit the submarine. Is there a strategy to guarantee you
-    will eventually hit the submarine?
+    What should the sum of the probabilities of each position on the board be, and why?
   \end{block}
 \end{frame}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  16 SEP 2025 23:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  15 SEP 2026 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1081,10 +1081,7 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)) (./lec07.aux
-<Reading QR code for "https://padlet.com/williamrileycasper/conjectures-for-los
-ing-positions-33ai54j4kifc9hx6" at level 6-M from aux file.>
-)
+)) (./lec07.aux)
 \openout1 = `lec07.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
@@ -1102,7 +1099,8 @@ LaTeX Font Info:    ... okay on input line 104.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
 LaTeX Font Info:    ... okay on input line 104.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 104.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 *geometry* driver: auto-detecting
@@ -1269,31 +1267,17 @@ Dictionary: translator-theorem-dictionary, Language: English
 
 ] [7
 
+] (./lec07.toc)
+[8
+
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 155.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 155.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 155.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 155.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 155.
- [8
-
-] [9
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 154.
+ [9
 
 ] [10
 
-]
-[11
+] [11
 
 ] [12
 
@@ -1301,42 +1285,41 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
 
 ] [14
 
-] [15
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 175.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 175.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 175.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 175.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 175.
+ [15
 
 ] [16
 
-] (./lec07.toc) [17
+] [17
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 200.
- [18
+[18
 
 ] [19
 
 ] [20
 
-]
+] [21
 
+] (./lec07.toc) [22
 
-<QR code requested for "https://padlet.com/williamrileycasper/conjectures-for-l
-osing-positions-33ai54j4kifc9hx6" in version 0-M.>
-
-<Copying the QR code for "https://padlet.com/williamrileycasper/conjectures-for
--losing-positions-33ai54j4kifc9hx6" in version 6-M as previously calculated.>
-[21
-
-]
-
-
-<QR code requested for "https://padlet.com/williamrileycasper/conjectures-for-l
-osing-positions-33ai54j4kifc9hx6" in version 0-M.>
-
-<Copying the QR code for "https://padlet.com/williamrileycasper/conjectures-for
--losing-positions-33ai54j4kifc9hx6" in version 6-M as previously calculated.>
-[22
-
-] (./lec07.toc) [23
+] [23
 
 ] [24
 
@@ -1350,11 +1333,10 @@ osing-positions-33ai54j4kifc9hx6" in version 0-M.>
 
 ] [29
 
-] [30
+]
+[30
 
 ] [31
-
-] [32
 
 ]
 \tf@nav=\write6
@@ -1366,35 +1348,29 @@ osing-positions-33ai54j4kifc9hx6" in version 0-M.>
 \tf@snm=\write8
 \openout8 = `lec07.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
-
-(./lec07.aux
-<Reading QR code for "https://padlet.com/williamrileycasper/conjectures-for-los
-ing-positions-33ai54j4kifc9hx6" at level 6-M from aux file.>
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
+ (./lec07.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
 Package rerunfilecheck Info: File `lec07.out' has not changed.
-(rerunfilecheck)             Checksum: 40C74A25F8C9AFC7E991A52DBE681BBF;247.
+(rerunfilecheck)             Checksum: DB2652B8990DF244B418839A6B696AFD;242.
  ) 
 Here is how much of TeX's memory you used:
- 20122 strings out of 494847
- 368823 string characters out of 6179079
- 531190 words of memory out of 5000000
- 22909 multiletter control sequences out of 15000+600000
- 32006 words of font info for 49 fonts, out of 8000000 for 9000
+ 20109 strings out of 494847
+ 368261 string characters out of 6179079
+ 449418 words of memory out of 5000000
+ 22899 multiletter control sequences out of 15000+600000
+ 30789 words of font info for 48 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 56i,19n,65p,1934b,850s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,65p,800b,722s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/h
-elvetic/uhvro8a.pfb>
-Output written on lec07.pdf (32 pages, 121653 bytes).
+e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on lec07.pdf (31 pages, 99114 bytes).
 PDF statistics:
- 1078 PDF objects out of 1200 (max. 8388607)
- 1011 compressed objects within 11 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 1037 PDF objects out of 1200 (max. 8388607)
+ 974 compressed objects within 10 object streams
+ 67 named destinations out of 1000 (max. 500000)
  135 words of extra memory for PDF output out of 10000 (max. 10000000)
 
