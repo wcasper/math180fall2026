@@ -14,6 +14,8 @@ permalink: /code/heatmap/battleship-heatmap
 
 <main class="battleship-app" id="battleship-app">
   <header class="hero">
+    <p class="eyebrow">Math 180 · Monte Carlo Lab</p>
+    <h1>Battleship Probability Lab</h1>
     <p class="lede">Record what you know, then simulate fleets that fit the evidence. The heatmap estimates where the remaining ships are most likely to be.</p>
   </header>
 
@@ -87,6 +89,25 @@ permalink: /code/heatmap/battleship-heatmap
       </div>
     </aside>
   </div>
+
+  <section class="results-card" aria-labelledby="results-heading">
+    <div>
+      <p class="step-label">Step 3</p>
+      <h2 id="results-heading">Interpret the estimate</h2>
+      <p id="summary">Probabilities will appear inside the unknown squares. Blue squares are below the board average, while red squares are above it.</p>
+    </div>
+    <ol class="top-targets" id="top-targets" aria-label="Highest probability targets"></ol>
+  </section>
+
+  <details class="method-card">
+    <summary>How does the simulation work?</summary>
+    <div class="method-copy">
+      <p>The program first finds a legal placement of the selected ships. Ships are horizontal or vertical, cannot overlap, and may touch. Every unresolved hit must lie on a remaining ship; misses and sunk squares cannot.</p>
+      <p>It then repeatedly proposes moving one ship to a randomly selected legal position. Moves inconsistent with the evidence are rejected. After a warm-up period, the program records many fleet arrangements and reports the fraction that occupy each square. This is a Monte Carlo estimate, so rerunning it may change the percentages slightly.</p>
+      <p>The colors are comparative: blue is below the average probability for the current board, near-white is close to average, and red is above average. Contrast is adjusted to the spread of the current estimates, with a minimum scale to keep ordinary Monte Carlo noise from looking dramatic. The printed percentages—not the colors—are the absolute estimates.</p>
+      <p><strong>Modeling question:</strong> Does treating every legal fleet arrangement as equally plausible match how a real opponent chooses positions?</p>
+    </div>
+  </details>
 </main>
 
 <noscript>This activity requires JavaScript to run.</noscript>
