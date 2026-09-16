@@ -6,6 +6,12 @@ permalink: /code/heatmap/battleship-heatmap
 
 <link rel="stylesheet" href="./battleship.css">
 
+<div class="startup-warning" id="startup-warning">
+  The page loaded, but <code>battleship.js</code> did not start. Confirm that
+  this Markdown file, <code>battleship.js</code>, and <code>battleship.css</code>
+  are in the same folder, with matching capitalization.
+</div>
+
 <main class="battleship-app" id="battleship-app">
   <header class="hero">
     <p class="eyebrow">Math 180 · Monte Carlo Lab</p>
@@ -49,9 +55,9 @@ permalink: /code/heatmap/battleship-heatmap
         <div class="board" id="board" role="grid" aria-label="10 by 10 Battleship board"></div>
       </div>
       <div class="legend" aria-label="Probability color scale">
-        <span>Lower probability</span>
+        <span>Below average</span>
         <span class="gradient" aria-hidden="true"></span>
-        <span>Higher probability</span>
+        <span>Above average</span>
       </div>
     </section>
 
@@ -88,7 +94,7 @@ permalink: /code/heatmap/battleship-heatmap
     <div>
       <p class="step-label">Step 3</p>
       <h2 id="results-heading">Interpret the estimate</h2>
-      <p id="summary">Probabilities will appear inside the unknown squares. They estimate the chance that each square is occupied by one of the ships still afloat.</p>
+      <p id="summary">Probabilities will appear inside the unknown squares. Blue squares are below the board average, while red squares are above it.</p>
     </div>
     <ol class="top-targets" id="top-targets" aria-label="Highest probability targets"></ol>
   </section>
@@ -98,12 +104,11 @@ permalink: /code/heatmap/battleship-heatmap
     <div class="method-copy">
       <p>The program first finds a legal placement of the selected ships. Ships are horizontal or vertical, cannot overlap, and may touch. Every unresolved hit must lie on a remaining ship; misses and sunk squares cannot.</p>
       <p>It then repeatedly proposes moving one ship to a randomly selected legal position. Moves inconsistent with the evidence are rejected. After a warm-up period, the program records many fleet arrangements and reports the fraction that occupy each square. This is a Monte Carlo estimate, so rerunning it may change the percentages slightly.</p>
+      <p>The colors are comparative: blue is below the average probability for the current board, near-white is close to average, and red is above average. Contrast is adjusted to the spread of the current estimates, with a minimum scale to keep ordinary Monte Carlo noise from looking dramatic. The printed percentages—not the colors—are the absolute estimates.</p>
       <p><strong>Modeling question:</strong> Does treating every legal fleet arrangement as equally plausible match how a real opponent chooses positions?</p>
     </div>
   </details>
 </main>
 
 <noscript>This activity requires JavaScript to run.</noscript>
-
 <script src="./battleship.js" defer></script>
-

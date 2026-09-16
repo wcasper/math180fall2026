@@ -145,7 +145,7 @@ button { cursor: pointer; }
 .cell:hover, .cell:focus-visible { z-index: 2; outline: 3px solid #ffb703; outline-offset: -3px; }
 .cell.state-unknown.has-probability {
   color: var(--heat-ink, var(--navy));
-  background: hsl(var(--heat-hue, 191) var(--heat-saturation, 55%) var(--heat-lightness, 94%));
+  background: var(--heat-color, #f8fafc);
 }
 .cell.state-miss { color: #4f7690; background: #cae7f2; }
 .cell.state-miss::after { content: "×"; font-size: clamp(1rem, 3vw, 1.65rem); font-weight: 500; }
@@ -155,7 +155,13 @@ button { cursor: pointer; }
 .cell.state-sunk::after { content: "✕"; font-size: clamp(0.75rem, 2.3vw, 1.2rem); }
 
 .legend { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 14px; color: var(--muted); font-size: 0.76rem; font-weight: 700; }
-.gradient { width: min(180px, 34vw); height: 10px; border-radius: 999px; background: linear-gradient(90deg, hsl(191 55% 94%), hsl(180 79% 47%)); }
+.gradient {
+  width: min(180px, 34vw);
+  height: 10px;
+  border: 1px solid rgba(16, 42, 67, 0.14);
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2563eb 0%, #f8fafc 50%, #dc2626 100%);
+}
 
 .fleet-list { display: grid; gap: 8px; }
 .fleet-list label {

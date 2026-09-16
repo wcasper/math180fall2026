@@ -41,6 +41,7 @@
       cell.style.removeProperty("--heat-hue");
       cell.style.removeProperty("--heat-saturation");
       cell.style.removeProperty("--heat-lightness");
+      cell.style.removeProperty("--heat-color");
       cell.style.removeProperty("--heat-ink");
       if (boardState[Number(cell.dataset.index)] === "unknown") cell.textContent = "";
     });
@@ -310,17 +311,37 @@
       .map((probability, index) => ({ probability, index }))
       .filter(({ index }) => boardState[index] === "unknown")
       .sort((a, b) => b.probability - a.probability || a.index - b.index);
-    const maxProbability = eligible.length ? eligible[0].probability : 0;
+    const meanProbability = eligible.length
+      ? eligible.reduce((sum, item) => sum + item.probability, 0) / eligible.length
+      : 0;
+    const variance = eligible.length
+      ? eligible.reduce((sum, item) => sum + (item.probability - meanProbability) ** 2, 0) / eligible.length
+      : 0;
+    const standardDeviation = Math.sqrt(variance);
+    // Two standard deviations reach the palette endpoints. The 2.5 percentage-
+    // point floor prevents a nearly uniform board from amplifying sampling noise.
+    const contrastScale = Math.max(2 * standardDeviation, 0.025);
+
+    function mixColor(from, to, amount) {
+      const mixed = from.map((channel, index) => Math.round(channel + (to[index] - channel) * amount));
+      return `rgb(${mixed.join(", ")})`;
+    }
+
+    const neutral = [248, 250, 252];
+    const cool = [37, 99, 235];
+    const hot = [220, 38, 38];
 
     cells.forEach((cell, index) => {
       if (boardState[index] !== "unknown") return;
       const probability = probabilities[index];
-      const relative = maxProbability > 0 ? probability / maxProbability : 0;
+      const signedContrast = Math.max(-1, Math.min(1, (probability - meanProbability) / contrastScale));
+      const intensity = Math.pow(Math.abs(signedContrast), 0.78);
+      const heatColor = signedContrast < 0
+        ? mixColor(neutral, cool, intensity)
+        : mixColor(neutral, hot, intensity);
       cell.classList.add("has-probability");
-      cell.style.setProperty("--heat-hue", String(Math.round(191 - relative * 11)));
-      cell.style.setProperty("--heat-saturation", `${Math.round(55 + relative * 24)}%`);
-      cell.style.setProperty("--heat-lightness", `${Math.round(94 - relative * 47)}%`);
-      cell.style.setProperty("--heat-ink", relative > 0.62 ? "#ffffff" : "#102a43");
+      cell.style.setProperty("--heat-color", heatColor);
+      cell.style.setProperty("--heat-ink", intensity > 0.67 ? "#ffffff" : "#102a43");
       cell.textContent = `${Math.round(probability * 100)}%`;
       cell.setAttribute("aria-label", `${indexToCoordinate(index)}: ${Math.round(probability * 100)} percent estimated occupancy`);
     });
@@ -336,7 +357,7 @@
     });
 
     const shipNames = ships.map((ship) => ship.name).join(", ") || "none";
-    summaryElement.textContent = `Based on ${samples.toLocaleString()} sampled fleet arrangements. Remaining ships: ${shipNames}. The ${hits.size} unresolved hit${hits.size === 1 ? " is" : "s are"} required to be covered in every sample.`;
+    summaryElement.textContent = `Based on ${samples.toLocaleString()} sampled fleet arrangements. Remaining ships: ${shipNames}. The ${hits.size} unresolved hit${hits.size === 1 ? " is" : "s are"} required to be covered in every sample. Blue is below the current-board average of ${(meanProbability * 100).toFixed(1)}%; red is above it.`;
   }
 
   function resetBoard(message = "Board cleared. Enter new evidence, then run the simulation.") {
@@ -344,7 +365,7 @@
     boardState.fill("unknown");
     clearProbabilities();
     cells.forEach((_, index) => renderCell(index));
-    summaryElement.textContent = "Probabilities will appear inside the unknown squares. They estimate the chance that each square is occupied by one of the ships still afloat.";
+    summaryElement.textContent = "Probabilities will appear inside the unknown squares. Blue squares are below the board average, while red squares are above it.";
     setStatus(message, "idle");
     runButton.disabled = false;
   }
@@ -382,4 +403,6 @@
   });
 
   initializeBoard();
+  const startupWarning = document.getElementById("startup-warning");
+  if (startupWarning) startupWarning.hidden = true;
 })();
