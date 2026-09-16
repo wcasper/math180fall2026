@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Battleship Probability Lab
-permalink: /code/battleship/battleship-heatmap
+permalink: /code/heatmap/battleship-heatmap
 ---
 
 <link rel="stylesheet" href="./battleship.css">
