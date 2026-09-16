@@ -4,7 +4,7 @@ title: Battleship Probability Lab
 permalink: /code/battleship/battleship-heatmap
 ---
 
-<link rel="stylesheet" href="{{ '/battleship.css' | relative_url }}">
+<link rel="stylesheet" href="./battleship.css">
 
 <main class="battleship-app" id="battleship-app">
   <header class="hero">
@@ -104,5 +104,6 @@ permalink: /code/battleship/battleship-heatmap
 </main>
 
 <noscript>This activity requires JavaScript to run.</noscript>
-<script src="{{ '/battleship.js' | relative_url }}" defer></script>
+
+<script src="./battleship.js" defer></script>
 
