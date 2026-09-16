@@ -23,6 +23,20 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+.startup-warning {
+  width: min(760px, calc(100% - 32px));
+  margin: 24px auto 0;
+  padding: 14px 16px;
+  border: 1px solid #e7a39b;
+  border-radius: 10px;
+  color: #7d281f;
+  background: #fff0ee;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.startup-warning code { font-weight: 800; }
+
 .battleship-app {
   width: min(1160px, calc(100% - 32px));
   margin: 0 auto;
@@ -100,7 +114,8 @@ button { cursor: pointer; }
   grid-column: 2;
   grid-row: 2;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  grid-template-rows: repeat(10, minmax(0, 1fr));
   aspect-ratio: 1;
   overflow: hidden;
   border: 2px solid var(--navy);
@@ -112,6 +127,10 @@ button { cursor: pointer; }
   display: grid;
   place-items: center;
   min-width: 0;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
   border: 0;
   border-right: 1px solid rgba(16, 42, 67, 0.18);
   border-bottom: 1px solid rgba(16, 42, 67, 0.18);
