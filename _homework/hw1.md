@@ -5,7 +5,8 @@ permalink: /homework/hw1
 ---
 
 ### Directions
-Solve the following problems and write up your solutions.  You should work together as a group and use something like **Google docs** so that multiple people can help with writing up solution simultaneously.
+Solve the following problems and write up your solutions.  You should work together as a group and use something like **Google docs** so that multiple people can help with writing up solution simultaneously.  **DO NOT USE AI**
+
 
 Tips:
 * for credit, all answers should have explanations / justifications
