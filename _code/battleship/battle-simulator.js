@@ -226,8 +226,9 @@ function sinkFleet() {
       if(cells[i].style.background == cells[0].style.background) {
         indices.push(i);
         if(cells[i-nx*ny].innerHTML !== '-') {
-          if(cells[i-nx*ny].innerHTML < minval) {
-            minval = cells[i-nx*ny].innerHTML;
+          const firingNumber = Number(cells[i-nx*ny].textContent);
+          if(firingNumber < minval) {
+            minval = firingNumber;
 	    idx = i;
 	  };
         };
@@ -296,7 +297,6 @@ function simulate100Battles() {
     simulateBattle();
   };
 }
-
 
 
 
