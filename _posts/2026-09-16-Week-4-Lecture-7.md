@@ -11,7 +11,7 @@ title:  Lecture 7
 
 ### Slides
 
-* [Link to slides](http://wcasper.github.io/math180fall2027/slides/lec07/lec07.pdf)
+* [Link to slides](http://wcasper.github.io/math180fall2026/slides/lec07/lec07.pdf)
 
 
 
