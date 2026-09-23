@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Task 2
-permalink: /inclass/task2
+title: Task 1
+permalink: /inclass/task1
 ---
 
 ## Directions
