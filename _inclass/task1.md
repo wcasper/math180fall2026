@@ -1,34 +1,49 @@
 ---
 layout: page
-title: Task 1
-permalink: /inclass/task1
+title: Task 2
+permalink: /inclass/task2
 ---
 
 ## Directions
 Solve the following problems and write up your solutions.  
+Note that ALL solutions should come with an explanation!
 
-### Problem 1 (Existence)
-a) Find a Battleship fleet with X-ray data
-*      Rows: $$4,4,4,4,1,0,0,0,0,0$$
-*      Cols: $$5,4,4,4,0,0,0,0,0,0$$
+### Problem 1 
 
-b) Find a Battleship fleet with X-ray data
-*      Rows: $$0,2,5,1,4,2,1,1,1,0$$
-*      Cols: $$0,1,2,1,2,5,1,1,1,3$$
+Suppose you and some friends start a game of Sprouts with, but
+instead of trying to win you play collaboratively to try to stretch the game
+out as long as possible.
 
-### Problem 2 (Non-existence)
-a) Explain why there is no fleet with the $X$-ray data
-*      Rows: $$4,2,4,3,3,0,0,0,0,0$$
-*      Cols: $$5,4,4,4,0,0,0,0,0,0$$
+a) If you start with $$3$$ seeds, what is the most seeds that you could end the game with?
 
-b) Explain why there is no fleet with the $X$-ray data
-*      Rows: $$0,2,2,5,4,4,0,0,0,0$$
-*      Cols: $$1,2,2,3,2,2,0,2,1,2$$
+b) What about with $$4$$ seeds, what is the most seeds that you could end the game with?
 
-### Problem 3 (Non-uniqueness) 
-a)  Find an example of a fleet whose position is uniquely determined by its radar data.
+c) What about a general formula with $$n$$ seeds, what is the most seeds that you could end the game with?
 
-b) Find an example of a fleet whose position is ``stealthy": whose radar data actually describes several different potential fleet positions.  Show the other fleets.
+### Problem 2
+
+In this problem, suppose you start a game of Sprouts with $$n$$ seeds and that at the end of the game there are $$p$$ seeds which have less than $$3$$ sprouts coming out of them.
+
+a) Find a formula in terms of $$n$$ and $$p$$ for the total number of seeds at the end of the game.
+
+b) Find a formula in terms of $$n$$ and $$p$$ for the total number of sprout-segments (edges in the graph) at the end of the game.
+
+c) If $$n=8$$, what is the largest value that you can make $$p$$ be?
+
+### Problem 3
+
+At the end of a game of Sprouts, players have created what is called a **planar graph** or **planar network**.
+
+a) Is it possible for the final network in your game to be disconnected?  What is the most connected components you can make at the end?
+
+Note: a **disconnected** graph is one which comes in multiple pieces that aren't connected to each other by any edges.
+
+b) Find a relationship between $$n$$ and $$p$$ from Problem 2 and the number of regions enclosed by your planar graph.  Does it depend on the number of components?
+
+Note: a **component** of a graph is a piece of the graph that is connected together.  In particular, if the graph is connected, it only has one component.
+
+
+
 
 
 
