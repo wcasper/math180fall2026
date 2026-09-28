@@ -123,103 +123,173 @@
 %   15 and 30 frames, all told.
 
 \section{SoPS Lecture 10}
-\subsection{Sprouts}
 
 \begin{frame}{Review}
   \begin{block}{Last time}
     \begin{itemize}
 \pause
-      \item games focused on deductive / spatial reasoning
+      \item we played Sprouts
+      \item intro to graphs
+      \item questions about Sprouts
     \end{itemize}
   \end{block}
 \end{frame}
 
-\begin{frame}{Sprouts Game}
-  \begin{block}{Rules}
+\subsection{Degree sum formula}
+
+\begin{frame}{Degrees of vertices}
+\pause
+  \begin{block}{Definition}
+    The \textbf{degree} of a vertex is how many edges are coming out of it.
+  \end{block}
+\pause
+  \begin{block}{Activity}
+    Draw some examples of graphs and for each graph, do the following:
     \begin{itemize}
 \pause
-      \item draw a handful of \textbf{seeds}, ie. dots, on a piece of paper
+      \item  Count the vertices
 \pause
-      \item a move consists of drawing a \textbf{sprout}, ie. curve, from one seed to another, and then drawing a new seed somewhere on the sprout
+      \item  Count the edges
 \pause
-      \item each seed can have at most three sprouts coming out of it
+      \item  Figure out the degrees of the vertices
 \pause
-      \item sprouts cannot cross other sprouts
-\pause
-      \item last player to draw an arc wins
+      \item  Can you spot any relationships?
     \end{itemize}
   \end{block}
-  \begin{block}{Activity (20 minutes)}
-    Get into groups of two or three and try playing Sprouts!
+\end{frame}
+
+\begin{frame}{Degree Sum Formula}
+\pause
+  \begin{block}{Theorem:}
+    If we add up the degrees of all the vertices in the graph, the result is equal to twice the number of edges.
   \end{block}
 \end{frame}
-    
-\begin{frame}{Observations:}
-  \begin{block}{Question:}
-    What kinds of observations can you make about the game Sprouts?
+
+\begin{frame}{Degree Sum Formula}
+\pause
+  \begin{block}{Proof:}
+\pause
+    The degree of a vertex counts the number of edges coming out of it.\\
+\pause
+    The sum of all the degrees is the number of times any edge comes out of any vertex.\\
+\pause
+    Each edge comes out of exactly two vertices.\\
+\pause
+    Therefore the number of edges is twice the degree sum.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Handshaking Lemma}
+\pause
+  \begin{block}{Theorem:}
+    The number of vertices which have an odd degree must be even.
   \end{block}
 \pause
-  \begin{block}{Question:}
-    What kinds of conjectures can you make about the game Sprouts?
+  \begin{block}{Folksy version:}
+    At any business meeting, different people are shaking hands.\\
+    The number of people who shook an odd number of other people's hands must be even.
   \end{block}
 \end{frame}
 
-\begin{frame}{A single seed:}
-  \begin{block}{Question}
-    What happens if the initial setup has only one seed?
-  \end{block}
-\end{frame}
-
-\begin{frame}{Two seeds:}
-  \begin{block}{Question}
-    What about if we start with two seeds, what can happen?
-  \end{block}
-\end{frame}
-
-
-\subsection{Graphs}
-
-\begin{frame}{Vocabulary}
+\begin{frame}{Handshaking Lemma}
+  \begin{block}{Proof:}
 \pause
-  \begin{block}{Graphs}
-    A \textbf{graph} or \textbf{network} is a collection of dots called \textbf{vertices} and arcs between the dots called \textbf{edges}.
-  \end{block}
-  \begin{block}{Planar graphs}
-    A graph is called \textbf{planar} if it can be drawn without the edges crossing each other.
+    The sum of the degrees must be even.\\
+\pause
+    If we add up a bunch of numbers
+    $$a_1 + a_2 + \dots + a_n,$$
+    the result is even if and only if an even amount of the $a_j$'s were odd.\\
+\pause
+    Therefore the number of odd-degree vertices must be even.
   \end{block}
 \end{frame}
 
-\begin{frame}{Game length}
-  \begin{block}{Question 1}
-    Does every game of Sprouts eventually end?  If we start with $n$ seeds, what's the maximum number of moves?
+\subsection{Euler's Formula}
+\begin{frame}{Connected graphs}
+\pause
+  \begin{block}{definition}
+    A graph is called \textbf{connected} if you can travel from every vertex to every other by walking along a sequence of edges.
   \end{block}
-  \begin{block}{Question 2}
-    When the game has ended, how many regions are enclosed by the final graph?
+  \begin{block}{definition}
+    More generally, graphs are made up of \textbf{connected components}, ie. connected subgraphs which are as large as possible.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Planar graphs}
+\pause
+  \begin{block}{definition}
+    a graph is called \textbf{planar} if none of the edges of the graph overlap.
+  \end{block}
+\pause
+  \begin{block}{activity}
+    draw some examples of connected planar graphs and for each graph, do the following:
+    \begin{itemize}
+      \item  count the vertices
+      \item  count the edges
+      \item  count the number of regions
+      \item  can you spot any relationships?
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Euler's formula}
+\pause
+  \begin{block}{Theorem:}
+    Let $E$ be the number of edges, $V$ the number of faces, and $F$ the number of divided regions of a connected planar graph (including the ``outside").  Then
+  $$V-E+F = 2.$$
+  \end{block}
+\end{frame}
+
+\begin{frame}{Euler's formula}
+\pause
+  \begin{block}{Proof:}
+    Start with a graph.\\
+\pause
+    If it has an enclosed region, snip a boundary edge, creating a new graph.\\
+\pause
+    This merges the the region with an adjacent region, keeping the graph connected.\\
+\pause
+    Therefore the new graph has one less edge, one less region, but the same number of vertices.\\
+\pause
+    Therefore it doesn't change the value of $V-E+F$.\\
+\pause
+    Continue in this way until there's no enclosed regions, so $F=1$.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Euler's formula}
+\pause
+  \begin{block}{Proof (continued)}
+\pause
+    When $F=1$, the graph is a \textbf{tree}, connected without loops.\\
+\pause
+    It will have an vertex of degree $1$ at the tip of a branch.\\
+\pause
+    Remove that vertex and the edge it touched, ``pruning" the tree.\\
+\pause
+    This removes one edge and one vertex, leaving a smaller tree without changing the value of $V-E+F$.\\
+\pause
+    Prune until you are left with a single vertex and edge.\\
+\pause
+    You never changed the value of $V-E+F$, so $V-E+F=2$.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Multi-component Euler's formula}
+\pause
+  \begin{block}{Theorem:}
+    Let $E$ be the number of edges, $V$ the number of faces, and $F$ the number of divided regions and $C$ the number of connected components of a planar graph (including the ``outside").  Then
+  $$V-E+F = 1+C.$$
   \end{block}
 \end{frame}
 
 \subsection{Wrapping up}
 
-\begin{frame}{Discussion}
-\pause
-  \begin{block}{Good question}
-    What kind of interesting questions can you think of about Break the Cube?
-  \end{block}
-\pause
-  \begin{block}{Question}
-    Suppose we wanted to try to count the number of possible arrangements of the three blocks.  How might we begin to go about it?
-  \end{block}
-\end{frame}
-
-
 \begin{frame}{Question of the Day}
 \pause
   \begin{block}{Puzzle}
-	Suppose there is an enemy submarine at an unknown location on the integer
-	number line, and each minute, it moves at an unknown, fixed integer
-	velocity.  You may fire one missile per minute somewhere on the number line
-	in an attempt to hit the submarine. Is there a strategy to guarantee you
-    will eventually hit the submarine?
+    We say a graph can be painted with $3$ colors if you can paint its edges red, blue, and green such that no vertex has multiple edges of the same color coming out.\\
+    Find an example of a graph where every vertex has degree $3$, but where the graph is not $3$-colorable.
   \end{block}
 \end{frame}
 
@@ -227,9 +297,9 @@
   \begin{block}{Reflection}
     \begin{itemize}
 \pause
-      \item What was the static pattern you found that worked the best?
+      \item What does it mean for a graph to be connected?
 \pause
-      \item What dynamic algorithm would you suggest to improve your static algorithm.
+      \item What does it mean for a graph to be a tree?
     \end{itemize}
   \end{block}
 \begin{center}
