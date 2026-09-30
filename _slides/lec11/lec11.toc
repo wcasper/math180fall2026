@@ -2,4 +2,4 @@
 \beamer@sectionintoc {1}{SoPS Lecture 11}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Konigsberg bridge problem}{6}{0}{1}
 \beamer@subsectionintoc {1}{2}{Math and creativity}{20}{0}{1}
-\beamer@subsectionintoc {1}{3}{Wrapping up}{54}{0}{1}
+\beamer@subsectionintoc {1}{3}{Wrapping up}{53}{0}{1}
