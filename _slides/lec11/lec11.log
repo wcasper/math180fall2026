@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  30 SEP 2026 11:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  30 SEP 2026 12:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1149,8 +1149,8 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 ))) (./lec11.aux
-<Reading QR code for "https://whenavailable.com/invite/RdQejLJ6uuLgJ5n83xNW" at
- level 4-M from aux file.>
+<Reading QR code for "https://strawpoll.com/05ZdzpvRln6" at level 3-M from aux 
+file.>
 )
 \openout1 = `lec11.aux'.
 
@@ -1333,26 +1333,25 @@ Dictionary: translator-theorem-dictionary, Language: English
 ]
 
 
-<QR code requested for "https://whenavailable.com/invite/RdQejLJ6uuLgJ5n83xNW" 
-in version 0-M.>
+<QR code requested for "https://strawpoll.com/05ZdzpvRln6" in version 0-M.>
 
-<Copying the QR code for "https://whenavailable.com/invite/RdQejLJ6uuLgJ5n83xNW
-" in version 4-M as previously calculated.>
-LaTeX Font Info:    Try loading font information for U+msa on input line 143.
+<Copying the QR code for "https://strawpoll.com/05ZdzpvRln6" in version 3-M as 
+previously calculated.>
+LaTeX Font Info:    Try loading font information for U+msa on input line 144.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 143.
+LaTeX Font Info:    Try loading font information for U+msb on input line 144.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 143.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 144.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 143.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 144.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 143.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 144.
  [5
 
 ] (./lec11.toc)
@@ -1362,7 +1361,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
 <fig/bridges1.jpg, id=242, 703.62875pt x 439.6425pt>
 File: fig/bridges1.jpg Graphic file (type jpg)
 <use fig/bridges1.jpg>
-Package pdftex.def Info: fig/bridges1.jpg  used on input line 149.
+Package pdftex.def Info: fig/bridges1.jpg  used on input line 150.
 (pdftex.def)             Requested size: 307.28987pt x 192.00099pt.
  [7
 
@@ -1370,10 +1369,10 @@ Package pdftex.def Info: fig/bridges1.jpg  used on input line 149.
 <fig/bridges2.jpg, id=275, 303.1325pt x 238.8925pt>
 File: fig/bridges2.jpg Graphic file (type jpg)
 <use fig/bridges2.jpg>
-Package pdftex.def Info: fig/bridges2.jpg  used on input line 153.
+Package pdftex.def Info: fig/bridges2.jpg  used on input line 154.
 (pdftex.def)             Requested size: 307.28987pt x 242.17258pt.
 
-Overfull \vbox (38.16364pt too high) detected at line 153
+Overfull \vbox (38.16364pt too high) detected at line 154
  []
 
 [8
@@ -1384,7 +1383,7 @@ Overfull \vbox (38.16364pt too high) detected at line 153
 <fig/bridges3.jpg, id=336, 501.875pt x 648.4225pt>
 File: fig/bridges3.jpg Graphic file (type jpg)
 <use fig/bridges3.jpg>
-Package pdftex.def Info: fig/bridges3.jpg  used on input line 165.
+Package pdftex.def Info: fig/bridges3.jpg  used on input line 166.
 (pdftex.def)             Requested size: 142.70656pt x 184.3758pt.
  [10
 
@@ -1392,17 +1391,17 @@ Package pdftex.def Info: fig/bridges3.jpg  used on input line 165.
 <fig/bridges4.jpg, id=368, 503.8825pt x 338.26375pt>
 File: fig/bridges4.jpg Graphic file (type jpg)
 <use fig/bridges4.jpg>
-Package pdftex.def Info: fig/bridges4.jpg  used on input line 169.
+Package pdftex.def Info: fig/bridges4.jpg  used on input line 170.
 (pdftex.def)             Requested size: 307.28987pt x 206.28896pt.
 
-Overfull \vbox (2.28001pt too high) detected at line 169
+Overfull \vbox (2.28001pt too high) detected at line 170
  []
 
 [11
 
  <./fig/bridges4.jpg>]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 175.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 176.
  [12
 
 ] [13
@@ -1421,7 +1420,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 <fig/bridges5.png, id=615, 1126.2075pt x 1407.2575pt>
 File: fig/bridges5.png Graphic file (type png)
 <use fig/bridges5.png>
-Package pdftex.def Info: fig/bridges5.png  used on input line 201.
+Package pdftex.def Info: fig/bridges5.png  used on input line 202.
 (pdftex.def)             Requested size: 153.64493pt x 191.96855pt.
  [19
 
@@ -1493,11 +1492,11 @@ Package pdftex.def Info: fig/bridges5.png  used on input line 201.
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 341.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 342.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 341.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 342.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 341.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 342.
  [52
 
 ] (./lec11.toc) [53
@@ -1523,49 +1522,36 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 \tf@snm=\write8
 \openout8 = `lec11.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 368.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 368.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 369.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 369.
  (./lec11.aux
-<Reading QR code for "https://whenavailable.com/invite/RdQejLJ6uuLgJ5n83xNW" at
- level 4-M from aux file.>
+<Reading QR code for "https://strawpoll.com/05ZdzpvRln6" at level 3-M from aux 
+file.>
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 368.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 368.
-
-
-Package rerunfilecheck Warning: File `lec11.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lec11.out':
-(rerunfilecheck)             Before: 101771923C0B3716523092F92670FBF3;254
-(rerunfilecheck)             After:  4CB2283916155A87D5AC28B454740671;254.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 369.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 369.
+Package rerunfilecheck Info: File `lec11.out' has not changed.
+(rerunfilecheck)             Checksum: 4CB2283916155A87D5AC28B454740671;254.
  ) 
 Here is how much of TeX's memory you used:
- 23169 strings out of 494847
- 438465 string characters out of 6179079
- 560818 words of memory out of 5000000
- 25842 multiletter control sequences out of 15000+600000
+ 23165 strings out of 494847
+ 438382 string characters out of 6179079
+ 547550 words of memory out of 5000000
+ 25840 multiletter control sequences out of 15000+600000
  45242 words of font info for 68 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 56i,19n,65p,1274b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Navigation59} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.1.3.54} has been referenced but does not e
-xist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/hel
-vetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8
-a.pfb>
-Output written on lec11.pdf (58 pages, 3414233 bytes).
+ 56i,19n,65p,986b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/h
+elvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
+o8a.pfb>
+Output written on lec11.pdf (58 pages, 3413585 bytes).
 PDF statistics:
- 1895 PDF objects out of 2073 (max. 8388607)
- 1788 compressed objects within 18 object streams
- 123 named destinations out of 1000 (max. 500000)
+ 1893 PDF objects out of 2073 (max. 8388607)
+ 1786 compressed objects within 18 object streams
+ 121 named destinations out of 1000 (max. 500000)
  160 words of extra memory for PDF output out of 10000 (max. 10000000)
 
