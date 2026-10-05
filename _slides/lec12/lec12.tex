@@ -49,6 +49,7 @@
 
 \usepackage{times}
 \usepackage[T1]{fontenc}
+\usepackage{tikz}
 % Or whatever. Note that the encoding and the font should match. If T1
 % does not look nice, try deleting the line with the fontenc.
 
@@ -123,103 +124,73 @@
 %   15 and 30 frames, all told.
 
 \section{SoPS Lecture 12}
-\subsection{Connect 4}
 
-\begin{frame}{How to Play}
-  \begin{block}{Rules}
+\begin{frame}{Review}
+  \begin{block}{Last time}
     \begin{itemize}
 \pause
-      \item players take turns dropping disks into $7\times 6$ board
-\pause
-      \item first player to get $4$-in-a-row wins
-    \end{itemize}
-  \end{block}
-  \begin{block}{Fun Facts}
-    \begin{itemize}
-\pause
-      \item game was originally released by 1974
-\pause
-      \item game was ``solved" in 1988 by Victor Allis
+      \item mathematics as a creative endeavor
+      \item problem solving strategies
+      \item creativity in problem solving
     \end{itemize}
   \end{block}
 \end{frame}
-    
-\begin{frame}{Let's Play}
-  \begin{block}{Activity (40 mins)}
-    What kinds of observations can you make about the game Sprouts?
+
+\subsection{Starter problem}
+
+\begin{frame}{An old problem}
+  \begin{block}{Problem}
+    What is the sum of the numbers
+    $$1 + 2 + 3 + 4 + \dots + 99 + 100?$$
   \end{block}
 \pause
-  \begin{block}{Question:}
-    What kinds of conjectures can you make about the game Sprouts?
+  \begin{block}{Theorem}
+    For any positive integer $n$,
+    $$1 + 2 + 3 + 4 + \dots + (n-1) + n = \frac{n(n+1)}{2}.$$
   \end{block}
 \end{frame}
 
-\begin{frame}{A single seed:}
-  \begin{block}{Question}
-    What happens if the initial setup has only one seed?
-  \end{block}
-\end{frame}
+\begin{frame}{2024 IMO Shortlist}
 
-\begin{frame}{Two seeds:}
-  \begin{block}{Question}
-    What about if we start with two seeds, what can happen?
-  \end{block}
-\end{frame}
+Let $\lfloor x\rfloor$ be the \textbf{floor function}, ie. what we get by rounding $x$ down to the nearest integer.  So for example
 
+$$\lfloor 2.6\rfloor = 2,\quad \lfloor 3\rfloor  = 3,\quad \lfloor -7.1\rfloor = -8.$$
 
-\subsection{Graphs}
-
-\begin{frame}{Vocabulary}
 \pause
-  \begin{block}{Graphs}
-    A \textbf{graph} or \textbf{network} is a collection of dots called \textbf{vertices} and arcs between the dots called \textbf{edges}.
-  \end{block}
-  \begin{block}{Planar graphs}
-    A graph is called \textbf{planar} if it can be drawn without the edges crossing each other.
+For which real numbers $x$ is the integer 
+
+$$\lfloor x \rfloor + \lfloor 2x \rfloor + \lfloor 3x\rfloor + \dots + \lfloor nx\rfloor$$
+
+divisible by $$n$$ for all positive integers $$n$$?
+\end{frame}
+
+\subsection{Strategies of Problem Solving}
+
+\begin{frame}{Discussion}
+  \begin{block}{Question}
+    What strategies of problem solving did you use on the previous problem?
   \end{block}
 \end{frame}
 
-\begin{frame}{Game length}
-  \begin{block}{Question 1}
-    Does every game of Sprouts eventually end?  If we start with $n$ seeds, what's the maximum number of moves?
-  \end{block}
-  \begin{block}{Question 2}
-    When the game has ended, how many regions are enclosed by the final graph?
+\begin{frame}{Putnam Problem}
+  \begin{block}{Problem}
+A grasshopper starts at the origin in the coordinate plane and makes a sequence of
+hops. Each hop has length 5, and after each hop the grasshopper is at a point whose
+coordinates are both integers; thus, there are 12 possible locations for the grasshopper
+after the first hop. What is the smallest number of hops needed for the grasshopper
+to reach the point (2021, 2021)
   \end{block}
 \end{frame}
 
 \subsection{Wrapping up}
 
-\begin{frame}{Discussion}
-\pause
-  \begin{block}{Good question}
-    What kind of interesting questions can you think of about Break the Cube?
-  \end{block}
-\pause
-  \begin{block}{Question}
-    Suppose we wanted to try to count the number of possible arrangements of the three blocks.  How might we begin to go about it?
-  \end{block}
-\end{frame}
-
-
-\begin{frame}{Question of the Day}
-\pause
-  \begin{block}{Puzzle}
-	Suppose there is an enemy submarine at an unknown location on the integer
-	number line, and each minute, it moves at an unknown, fixed integer
-	velocity.  You may fire one missile per minute somewhere on the number line
-	in an attempt to hit the submarine. Is there a strategy to guarantee you
-    will eventually hit the submarine?
-  \end{block}
-\end{frame}
-
 \begin{frame}{Final thoughts}
   \begin{block}{Reflection}
     \begin{itemize}
 \pause
-      \item What was the static pattern you found that worked the best?
+      \item Look up an example of a Putnam Exam problem that looks interesting.  What is the problem statement?  What is hard about it?
 \pause
-      \item What dynamic algorithm would you suggest to improve your static algorithm.
+      \item Write down some ideas about how you might begin to approach solving the problem you mentioned.
     \end{itemize}
   \end{block}
 \begin{center}
