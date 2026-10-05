@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  5 OCT 2026 03:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  5 OCT 2026 11:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1320,25 +1320,20 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictiona
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-)
-No file lec12.nav.
-[1
+) (./lec12.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-No file lec12.toc.
-[2
+] (./lec12.toc) [2
 
 ] [3
 
 ] [4
 
-]
-No file lec12.toc.
-[5
+] (./lec12.toc) [5
 
 ]
 LaTeX Font Info:    Try loading font information for U+msa on input line 151.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 151.
@@ -1364,16 +1359,13 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 ] [9
 
 ]
-No file lec12.toc.
-[10
+(./lec12.toc) [10
 
 ] [11
 
 ] [12
 
-]
-No file lec12.toc.
-[13
+] (./lec12.toc) [13
 
 ] [14
 
@@ -1396,24 +1388,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 202.
  (./lec12.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 202.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 202.
-
-
-Package rerunfilecheck Warning: File `lec12.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lec12.out':
-(rerunfilecheck)             Before: 93851B4C797449BB4F4EF54F60D79481;114
-(rerunfilecheck)             After:  E5A6A5F2343F0DCBF72F75235C136789;254.
+Package rerunfilecheck Info: File `lec12.out' has not changed.
+(rerunfilecheck)             Checksum: E5A6A5F2343F0DCBF72F75235C136789;254.
  ) 
 Here is how much of TeX's memory you used:
- 22820 strings out of 494847
- 432421 string characters out of 6179079
- 509671 words of memory out of 5000000
- 25600 multiletter control sequences out of 15000+600000
+ 22941 strings out of 494847
+ 435312 string characters out of 6179079
+ 510672 words of memory out of 5000000
+ 25711 multiletter control sequences out of 15000+600000
  32006 words of font info for 49 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 56i,15n,59p,800b,722s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,65p,800b,723s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist
@@ -1421,10 +1406,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist
 /type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/h
 elvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
 o8a.pfb>
-Output written on lec12.pdf (16 pages, 77933 bytes).
+Output written on lec12.pdf (16 pages, 83963 bytes).
 PDF statistics:
- 501 PDF objects out of 1000 (max. 8388607)
- 458 compressed objects within 5 object streams
+ 589 PDF objects out of 1000 (max. 8388607)
+ 541 compressed objects within 6 object streams
  37 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
 
