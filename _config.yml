@@ -66,6 +66,8 @@ plugins:
 collections:
   homework:
     output: true
+  modules:
+    output: true
   slides:
     output: true
   code:
