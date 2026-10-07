@@ -1,0 +1,220 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This file is a template using the "beamer" package to create slides for a talk or presentation
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+% MODIFIED by Jonathan Kew, 2008-07-06
+% The header comments and encoding in this file were modified for inclusion with TeXworks.
+% The content is otherwise unchanged from the original distributed with the beamer package.
+
+\documentclass{beamer}
+\setbeamercovered{invisible}
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+\usepackage{qrcode}
+\usepackage{hyperref}
+\usepackage{ytableau}
+\usepackage{longtable}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%%% MATH RELATED
+
+\title{MATH 180 Strategies of Problem Solving} 
+\subtitle
+{} % (optional)
+
+\author[W.R. Casper] % (optional, use only with lots of authors)
+{W.R. Casper}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[California State University Fullerton] % (optional, but mostly needed)
+{
+  Department of Mathematics\\
+  California State University Fullerton}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{SoPS Lecture 13}
+
+\begin{frame}{Review}
+  \begin{block}{Last time}
+    \begin{itemize}
+\pause
+      \item a story about Gauss
+\pause
+      \item problem solving strategies
+\pause
+      \item math competition problems
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\subsection{Connect 4}
+
+\begin{frame}{Play the game}
+  \begin{block}{Activity}
+    \begin{itemize}
+\pause
+      \item remind yourself how to play
+\pause
+      \item play a some games of Connect 4 with a friend
+\pause
+      \item best strategy to win?
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Connect 4 Strategy}
+  \begin{block}{Discussion}
+	Who can force a win?
+  \end{block}
+\pause
+  \begin{block}{Discussion}
+	What do you think is the best first move?  What is
+the best second move?  What would a complete winning strategy description look like?
+  \end{block}
+\end{frame}
+
+\begin{frame}{Weakly and strongly solved games}
+  \begin{block}{Definition}
+    A game is
+    \begin{itemize}
+\pause
+      \item \textbf{very weakly solved} if we know which player can force a win at the start of the game
+\pause
+      \item \textbf{weakly solved} if we know \emph{how} the player can force a win starting from the start of the game
+\pause
+      \item \textbf{strongly solved} if we know which player will win and how from any possible state of the game
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Examples}
+\pause
+  \begin{block}{Example 1}
+    Chomp is very weakly solved.
+  \end{block}
+\pause
+  \begin{block}{Example 2}
+    Checkers is weakly solved.
+  \end{block}
+\pause
+  \begin{block}{Example 3}
+    Connect 4 is strongly solved (89.6 GB data).
+  \end{block}
+\end{frame}
+
+\begin{frame}{Weak solution}
+  See weak solution on \href{https://www.youtube.com/watch?v=KaljD3Q3ct0}{YouTube}.\\
+  Play against weak solution on \href{https://2swap.github.io/WeakC4/?pos=4}{Github}.
+\end{frame}
+
+\subsection{Wrapping up}
+
+\begin{frame}{Final thoughts}
+  \begin{block}{Reflection}
+    \begin{itemize}
+\pause
+      \item What is the difference between a weak solution and a strong solution of a game?
+\pause
+      \item How was a graph used to visualize a weak solution of Connect 4?
+    \end{itemize}
+  \end{block}
+\begin{center}
+Submit your responses by \textbf{Tonight!}
+\end{center}
+\end{frame}
+
+
+\end{document}
+
+
