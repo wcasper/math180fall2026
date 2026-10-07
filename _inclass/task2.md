@@ -10,24 +10,6 @@ Note that ALL solutions should come with an explanation!
 
 ### Problem 1 
 
-Suppose you are playing Connect 4 with a friend.
-For simplicity, ignore turn order so that both players could take all their turns whenever.
-
-a) What are all the possible states of the board after you both have taken one turn?
-
-b) What are all the possible states of the board after you both have taken two turns?
-
-c) What are all the possible states of the board after you both have taken three turns?
-
-### Problem 2
-
-Suppose you are playing Connect 4 with a friend.
-For simplicity, ignore turn order so that both players could take all their turns whenever.
-
-What are all the possible states of the board after both of you have taken four turns, assuming neither player has won?
-
-### Problem 3
-
 Consider the following Connect 4 board state:
 A Connect 4 endgame problem is the problem of determining a sequence of moves from the current position to force a win.
 
@@ -44,7 +26,7 @@ $$\begin{array}{|c|c|c|c|c|c|c|}
 
 It's White's move.  Carefully write down a strategy that Black can use to win, regardless of what moves their opponent makes.
 
-### Problem 4
+### Problem 2
 
 Consider the following Connect 4 endgame problem:
 
@@ -61,7 +43,7 @@ $$\begin{array}{|c|c|c|c|c|c|c|}
 It's White's move. Carefully write down a strategy which shows that White can win in two or less moves.
 You may have to approach things case-by-case.
 
-### Problem 5
+### Problem 3
 
 Consider the following Connect 4 endgame problem:
 
@@ -77,6 +59,22 @@ $$\begin{array}{|c|c|c|c|c|c|c|}
 
 It's White's move. Carefully write down a strategy which shows that White can win in three or less moves.
 You may have to approach things case-by-case.
+
+### Problem 4
+
+This problem demonstrates how quickly the number of possible game states seems to expand.
+Suppose you are playing Connect 4 with a friend, with red going first.
+
+a) What are all the possible states of the board after you both have taken one turn?
+
+b) What are all the possible states of the board after you both have taken two turns?
+
+c) What are all the possible states of the board after you both have taken three turns?
+
+### Problem 5
+
+Suppose that decide to place $$9$$ red Connect $$4$$ pieces into the standard $$6\times 7$$ gameboard.
+How many different arrangements can you make?
 
 
 
