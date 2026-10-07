@@ -33,7 +33,6 @@ Consider the following Connect 4 endgame problem:
 $$\begin{array}{|c|c|c|c|c|c|c|}
 \quad & \quad & \quad & \quad & \quad & \quad & \quad\\\hline
 \quad & \quad & \quad & \quad & \quad & \quad & \quad\\\hline
-\quad & \quad & \quad & \quad & \quad & \quad & \quad\\\hline
 \quad & \quad & \bullet & \quad & \quad & \quad & \circ\\\hline
 \quad & \quad & \circ & \quad & \bullet & \quad & \bullet\\\hline
 \quad & \quad & \circ & \quad & \circ & \circ & \bullet\\\hline
@@ -48,7 +47,6 @@ You may have to approach things case-by-case.
 Consider the following Connect 4 endgame problem:
 
 $$\begin{array}{|c|c|c|c|c|c|c|}
-\quad & \quad & \quad & \quad & \quad & \quad & \quad\\\hline
 \quad & \quad & \quad & \quad & \quad & \quad & \quad\\\hline
 \quad & \quad & \quad & \quad & \quad & \quad & \quad\\\hline
 \quad & \quad & \quad & \quad & \circ & \quad & \quad\\\hline
