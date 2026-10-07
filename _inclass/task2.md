@@ -73,7 +73,7 @@ c) What are all the possible states of the board after you both have taken three
 
 ### Problem 5
 
-Suppose that decide to place $$9$$ red Connect $$4$$ pieces into the standard $$6\times 7$$ gameboard.
+Suppose that decide to place $$9$$ red Connect $$4$$ pieces into the standard $$6\times 7$$ gameboard.  You place no yellow pieces and you don't care whether or not you get $$4$$-in-a-row.
 How many different arrangements can you make?
 
 
