@@ -141,96 +141,143 @@
 \subsection{Connect 4 Problems}
 
 \begin{frame}{Combinatorics problem}
+\pause
   \begin{block}{Problem:}
+\pause
     You have $10$ identical marbles, a blue cup, and a red cup.\\
+\pause
     How many different ways can we put the marbles into the cups?
   \end{block}
 \end{frame}
 
 \begin{frame}{Combinatorics problem}
+\pause
 \textbf{Solution:}\\
   \begin{itemize}
+\pause
     \item $10$ in blue, $0$ in red;
+\pause
     \item $9$ in blue, $1$ in red;
+\pause
     \item $8$ in blue, $2$ in red;
+\pause
     \item $\dots$
+\pause
     \item $1$ in blue, $9$ in red;
+\pause
     \item $0$ in blue, $10$ in red.
   \end{itemize}
+\pause
 $$\text{{\color{blue}11 total ways}}$$
 \end{frame}
 
 \begin{frame}{Combinatorics problem -- version 2}
+\pause
   \begin{block}{Problem:}
+\pause
     You have $10$ identical marbles, a blue cup, a red cup, and a yellow cup.\\
+\pause
     How many different ways can we put the marbles into the cups?
   \end{block}
 \end{frame}
 
 \begin{frame}{Combinatorics problem -- version 2}
+\pause
 \textbf{Solution:}\\
   \begin{itemize}
+\pause
     \item $10$ in blue, $0$ in red, $0$ in yellow;
+\pause
     \item $9$ in blue, $1$ in red, $0$ in yellow;
+\pause
     \item $8$ in blue, $2$ in red, $0$ in yellow;
+\pause
     \item $\dots$
+\pause
     \item $1$ in blue, $9$ in red, $0$ in yellow;
+\pause
     \item $0$ in blue, $10$ in red, $0$ in yellow;
   \end{itemize}
+\pause
 $$\text{{\color{red}11 total ways}}$$
 \end{frame}
 
 \begin{frame}{Combinatorics problem -- version 2}
 \textbf{Solution (continued):}\\
   \begin{itemize}
+\pause
     \item $9$ in blue, $0$ in red, $1$ in yellow;
+\pause
     \item $8$ in blue, $1$ in red, $1$ in yellow;
+\pause
     \item $7$ in blue, $2$ in red, $1$ in yellow;
+\pause
     \item $\dots$
+\pause
     \item $1$ in blue, $8$ in red, $1$ in yellow;
+\pause
     \item $0$ in blue, $9$ in red, $1$ in yellow;
   \end{itemize}
+\pause
 $$\text{{\color{red}10 total ways}}$$
 \end{frame}
 
 \begin{frame}{Combinatorics problem -- version 2}
 \textbf{Solution (continued):}\\
   \begin{itemize}
+\pause
     \item $8$ in blue, $0$ in red, $2$ in yellow;
+\pause
     \item $7$ in blue, $1$ in red, $2$ in yellow;
+\pause
     \item $6$ in blue, $2$ in red, $2$ in yellow;
+\pause
     \item $\dots$
+\pause
     \item $1$ in blue, $7$ in red, $2$ in yellow;
+\pause
     \item $0$ in blue, $8$ in red, $2$ in yellow;
   \end{itemize}
+\pause
 $$\text{{\color{red}9 total ways}}$$
 \end{frame}
 
 \begin{frame}{Combinatorics problem -- version 2}
 \textbf{Solution (continued):}\\
+\pause
 The pattern continues ... until:
   \begin{itemize}
+\pause
     \item $0$ in blue, $0$ in red, $10$ in yellow;
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Combinatorics problem -- version 2}
 \textbf{Solution (continued):}\\
+\pause
 Now we can get a {\color{blue}Grand Total:} $11+10+9 +\dots + 1$.\\
+\pause
 Remember Gauss's formula
 $$1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2}.$$
+\pause
 Using this we get our final answer:
 $$\text{{\color{blue}66 total ways}}$$
 \end{frame}
 
 \begin{frame}{Combinatorics problem -- version 3}
+\pause
   \begin{block}{Problem:}
+\pause
     You have $10$ identical marbles, a blue cup, a red cup, a yellow cup, and a green cup.\\
+\pause
     How many different ways can we put the marbles into the cups?
   \end{block}
   \begin{itemize}
+\pause
     \item we could approach it like before
+\pause
     \item might need \emph{sum of squares formula}
+\pause
     \item is there an {\color{red}easier way}?
   \end{itemize}
 \end{frame}
@@ -240,6 +287,7 @@ $$\text{{\color{blue}66 total ways}}$$
     You have $n$ identical marbles and $n$ different cups.\\
     How many different ways can we put the marbles into the cups?
   \end{block}
+\pause
   \begin{block}{Solution:}
     We will use an argument called \textbf{stars and bars}.
   \end{block}
@@ -247,10 +295,15 @@ $$\text{{\color{blue}66 total ways}}$$
 
 \begin{frame}{Stars and bars}
   \begin{itemize}
+\pause
     \item  Label the cups $1$ through $n$.
+\pause
     \item  Marble arrangments are described by $m$ stars with $n-1$ bars.
+\pause
     \item  How many stars before the first bar is how many marbles in the first cup.
+\pause
     \item  How many stars after the first bar and before the second is how many marbles in the second cup.
+\pause
     \item  Continue this pattern until, the number of stars after the last bar repesents the number of marbles in the $n$'th cup.
   \end{itemize}
 \end{frame}
@@ -258,8 +311,11 @@ $$\text{{\color{blue}66 total ways}}$$
 \begin{frame}{Stars and bars -- example}
   $$\star\star\vert \star \vert\vert \star \star \star \vert \star \star$$
   \begin{itemize}
+\pause
     \item  $4$ bars = $5$ cups\\
+\pause
     \item  $8$ stars = $8$ marbles\\
+\pause
     \item  arrangement:
     \begin{itemize}
       \item  two marbles in cup $1$;
@@ -276,8 +332,11 @@ $$\text{{\color{blue}66 total ways}}$$
     Consider the following \textbf{stars and bars} expression:
     $$\vert\vert\star\star\star\vert\star\star\vert\star\star\star\vert$$
     \begin{itemize}
+\pause
       \item  how many cups in this arrangement
+\pause
       \item  how many marbles in this arrangement
+\pause
       \item  describe how many marbles in each cup
     \end{itemize}
   \end{block}
@@ -294,6 +353,7 @@ $$\text{{\color{blue}66 total ways}}$$
   \begin{block}{Theorem (Stars and bars formula):}
     The number of ways of putting $n$ indistinguishable marbles into $m$ different cups is $\binom{m+n-1}{m}$.
   \end{block}
+\pause
   \begin{block}{Proof:}
     It's the same as the number of stars and bars expressions with $m$ stars and $n-1$ bars.  Each expression is a string with $m+n-1$ characters, of which you choose $m$ spots for stars and fill the rest with bars.  Thus there's $m+n-1$ choose $m$ total ways.
   \end{block}
@@ -302,9 +362,13 @@ $$\text{{\color{blue}66 total ways}}$$
 \begin{frame}{Stars and bars formula}
   Examples:
   \begin{itemize}
+\pause
     \item with $10$ marbles and two cups: $\binom{10+2-1}{10} = \binom{11}{10} = 11$
+\pause
     \item with $10$ marbles and three cups: $\binom{10+3-1}{10} = \binom{12}{10} = 66$
+\pause
     \item with $10$ marbles and four cups: $\binom{10+4-1}{10} = \binom{13}{10} = 286$
+\pause
     \item with $15$ marbles and seven cups: $\binom{15+7-1}{15} = \binom{21}{15} = 54264$
   \end{itemize}
 \end{frame}

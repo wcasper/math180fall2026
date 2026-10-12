@@ -1,5 +1,5 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{SoPS Lecture 14}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Connect 4 Problems}{7}{0}{1}
-\beamer@subsectionintoc {1}{2}{Ready Set Bet}{25}{0}{1}
-\beamer@subsectionintoc {1}{3}{Wrapping up}{29}{0}{1}
+\beamer@subsectionintoc {1}{2}{Ready Set Bet}{89}{0}{1}
+\beamer@subsectionintoc {1}{3}{Wrapping up}{93}{0}{1}
