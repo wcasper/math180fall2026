@@ -16,9 +16,9 @@ permalink: /homework/hw2
 * Answer **Response 3**
 * Expand the **Editable payout table** using the data in your board
 * Answer **Response 4a** and **Response 4b**
-* Brainstorm interesting questions you could investigate about Ready Set Bet using a computer.  Use one of the built-in questions or edit the code to answer your own question for **Reponse 5**
+* Brainstorm interesting questions you could investigate about Ready Set Bet using a computer.  Use one of the built-in questions or edit the code to answer your own question for **Your investigation** in Part 5.
 
-Solve the following problems and write up your solutions.  You should work together as a group and use something like **Google docs** so that multiple people can help with writing up solution simultaneously.  **DO NOT USE AI**
+You should work together as a group and use something like **Google docs** so that multiple people can help with writing up solution simultaneously.  **DO NOT USE AI**
 
 
 Tips:
