@@ -17,6 +17,7 @@ permalink: /homework/hw2
 * Expand the **Editable payout table** using the data in your board
 * Answer **Response 4a** and **Response 4b**
 * Brainstorm interesting questions you could investigate about Ready Set Bet using a computer.  Use one of the built-in questions or edit the code to answer your own question for **Your investigation** in Part 5.
+* To turn in your assignment, **share a link** to your filled out Jupyter notebook on Google Colab
 
 You should work together as a group and use something like **Google docs** so that multiple people can help with writing up solution simultaneously.  **DO NOT USE AI**
 
