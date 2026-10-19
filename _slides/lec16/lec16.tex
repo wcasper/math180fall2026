@@ -326,6 +326,26 @@ $$\mathbb E(f) = p_1 f(o_1) + p_2 f(o_2) + p_3 f(o_3) + \dots + p_N f(o_N).$$
     & = \frac{45 + 54 + 48 + 60 + 36}{1296} = \frac{243}{1296} = 0.1875
   \end{align*}
 }
+$$\text{{\color{red}Is there an easier way?}}$$
+\end{frame}
+
+\begin{frame}{Expected horse position}
+  \begin{block}{Problem}
+    What is the expected position of the $2/3$ horse after two rolls?
+  \end{block}
+\pause
+\begin{itemize}
+\pause
+\item probability of $2/3$ rolled $p=\frac{9}{1296}$
+\pause
+\item probability of $2/3$ rolled twice $\mathbb P(\text{2/3 and 2/3}) = p^2$
+\pause
+\item probability of $2/3$ rolled first only $\mathbb P(\text{2/3 then not 2/3}) = p(1-p)$
+\pause
+\item probability of $2/3$ rolled second only $\mathbb P(\text{not 2/3 then 2/3}) = (1-p)p$
+\end{itemize}
+\pause
+$$\mathbb E(2/3) = 5p^2 + p(1-p) + (1-p)p = 0.1875$$
 \end{frame}
 
 \begin{frame}{Expected horse position}
