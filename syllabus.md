@@ -11,7 +11,7 @@ permalink: /syllabus
 
 **Email:** wcasper@fullerton.edu
 
-**Office hourse:** TBA.  Additional office hours may be available by request.
+**Office hourse:** Monday/Wednesday 12-1PM in MH 380 and 3-4PM in MH 442.  Additional office hours may be available by request.
 
 **Course website:** the main course website will be <a target="_parent" href="https://wcasper.github.io/math180fall2026">Github Pages site (link)</a>, but we will also use the Canvas website for submitting assignments and maintaining grades
 
