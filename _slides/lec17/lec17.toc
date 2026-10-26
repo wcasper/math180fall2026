@@ -6,8 +6,3 @@
 \beamer@subsectionintoc {1}{4}{Sets containing sets}{30}{0}{1}
 \beamer@sectionintoc {2}{Set algebra}{37}{0}{2}
 \beamer@subsectionintoc {2}{1}{Union, intersection, and difference}{37}{0}{2}
-\beamer@subsectionintoc {2}{2}{Counting and power sets}{58}{0}{2}
-\beamer@subsectionintoc {2}{3}{Ordered pairs and products}{68}{0}{2}
-\beamer@subsectionintoc {2}{4}{Quantifiers and proofs}{73}{0}{2}
-\beamer@sectionintoc {3}{Why is it called naive?}{77}{0}{3}
-\beamer@subsectionintoc {3}{1}{Russell's paradox}{77}{0}{3}
