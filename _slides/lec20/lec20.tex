@@ -1,0 +1,429 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This file is a template using the "beamer" package to create slides for a talk or presentation
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+% MODIFIED by Jonathan Kew, 2008-07-06
+% The header comments and encoding in this file were modified for inclusion with TeXworks.
+% The content is otherwise unchanged from the original distributed with the beamer package.
+
+\documentclass{beamer}
+\setbeamercovered{invisible}
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+\usepackage{qrcode}
+\usepackage{hyperref}
+\usepackage{ytableau}
+\usepackage{longtable}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%%% MATH RELATED
+
+\title{MATH 180 Strategies of Problem Solving} 
+\subtitle
+{} % (optional)
+
+\author[W.R. Casper] % (optional, use only with lots of authors)
+{W.R. Casper}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[California State University Fullerton] % (optional, but mostly needed)
+{
+  Department of Mathematics\\
+  California State University Fullerton}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{SoPS Lecture 20}
+
+\begin{frame}{Review}
+  \begin{block}{Last time}
+    \begin{itemize}
+\pause
+      \item Relations, Functions
+\pause
+      \item Injective, Surjective, Bijective
+\pause
+      \item Cardinality, Hilbert's Hotel
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\subsection{Finite Sets}
+
+\begin{frame}{Finite means what?}
+\begin{block}{Question}
+How should we define a set to be \textbf{finite}?
+\end{block}
+\end{frame}
+
+\begin{frame}{Finite sets}
+We have some sets we know are finite.\\
+\pause
+Define
+$$\mathbb N_1 = \{1\},\quad\mathbb N_2 = \{1,2\},\quad\mathbb N_3 = \{1,2,3\}$$
+\pause
+In general, for any $k\in\mathbb N$ define
+$$\mathbb N_k = \{1,2,3,\dots, k\}.$$
+\pause
+\begin{block}{Definition}
+A set $A$ is called \textbf{finite} if there exists a $k\in\mathbb N$ for which there is a bijection from $\mathbb N_k$ to $A$.
+\end{block}
+\end{frame}
+
+\begin{frame}{Example}
+\begin{block}{Problem}
+Show that $\mathbb N_j$ is finite for all $j$.
+\end{block}
+\pause
+Must show that there's a $k\in \mathbb N$ with a bijection from $\mathbb N_k$ to $\mathbb N_j$.\\
+\pause
+\begin{block}{Question}
+What value of $k$ should we choose?
+\end{block}
+\pause
+\begin{block}{Answer}
+We should choose $k=j$.  That's the only value we should expect to have a bijection!
+\end{block}
+\end{frame}
+
+\begin{frame}{Example}
+\begin{block}{Problem}
+Show that $\mathbb N_j$ is finite for all $j$.
+\end{block}
+Must show that there's a $k\in \mathbb N$ with a bijection from $\mathbb N_k$ to $\mathbb N_j$.\\
+\begin{block}{Question}
+What bijection is there from $\mathbb N_k$ to $\mathbb N_k$?
+\end{block}
+\pause
+\begin{block}{Answer}
+There's lots!  We just need to demonstrate that there's at least one.\\
+\pause
+The \textbf{identity function}
+$$f:\mathbb N_k\rightarrow\mathbb N_k,\quad f(x) = x$$
+in particular is a bijection.
+\end{block}
+\end{frame}
+
+\begin{frame}{Example}
+\begin{block}{Problem}
+Show that $A = \{\heartsuit,\spadesuit,\diamondsuit,\clubsuit\}$ is finite.
+\end{block}
+Must show that there's a $k\in \mathbb N$ with a bijection from $\mathbb N_k$ to $A$.\\
+\begin{block}{Question}
+What $k$ should we choose?
+\end{block}
+\pause
+\begin{block}{Answer}
+We should choose $k=4$.
+\end{block}
+\end{frame}
+
+\begin{frame}{Example}
+\begin{block}{Problem}
+Show that $A = \{\heartsuit,\spadesuit,\diamondsuit,\clubsuit\}$ is finite.
+\end{block}
+Must show that there's a $k\in \mathbb N$ with a bijection from $\mathbb N_k$ to $A$.\\
+\begin{block}{Question}
+What bijection from $\mathbb N_4$ to $A$ is there?
+\end{block}
+\pause
+\begin{block}{Answer}
+There's lots!  We just need to show that there's at least one.\\
+\pause
+For example, $f: \mathbb N_4\rightarrow A$ defined by
+$$f(1) = \heartsuit,\quad f(2) = \spadesuit,\quad f(3) = \diamondsuit,\quad f(4) = \clubsuit$$
+\end{block}
+\end{frame}
+
+\subsection{Pidgeonhole Principle}
+\begin{frame}{Starting Example}
+
+\pause
+\begin{block}{Question}
+Why is there no bijection from $\mathbb N_2$ to $\mathbb N_1$?
+\end{block}
+\pause
+\begin{block}{Solution}
+\pause
+Take a function $f: \mathbb N_2\rightarrow \mathbb N_1$.\\
+\pause
+$$f: \{1,2\}\rightarrow\{1\}$$
+\pause
+$$f(1) = 1\quad\text{and}\quad f(2)=1$$
+\pause
+Therefore $f$ fails to be injective.
+\end{block}
+\end{frame}
+
+\begin{frame}{Second Example}
+\begin{block}{Question}
+Why is there no bijection from $\mathbb N_3$ to $\mathbb N_2$?
+\end{block}
+\pause
+\begin{block}{Solution}
+\pause
+Take a function $f: \mathbb N_3\rightarrow \mathbb N_2$.\\
+\pause
+$$f: \{1,2,3\}\rightarrow\{1,2\}$$
+\pause
+If $f(1) = f(2)$, then not injective.\\
+\pause
+Otherwise either $f(1) = 1,f(2) = 2$ or $f(1) = 2,f(2) =1$.\\
+\pause
+In either case, $f(3)$ must repeat one of the values!\\
+\pause
+Therefore $f$ fails to be injective.
+\end{block}
+\end{frame}
+
+\begin{frame}{Pidgeonhole Principle}
+\begin{block}{Theorem (Pidgeonhole Principle)}
+Let $j$ and $k$ be integers with $k > j$.
+If $f: \mathbb N_k\rightarrow\mathbb N_j$, then $f$ is not injective.
+\end{block}
+\end{frame}
+
+\begin{frame}{Application}
+\begin{block}{Problem}
+Show that at any party, two people in the party will always end up having the same number of acquaintances attending the party.
+\end{block}
+\pause
+Fine print:
+\begin{itemize}
+\pause
+\item we always consider someone to be their own acquaintance
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Application}
+\begin{block}{Solution}
+\pause
+Label the guests at the party as $1,2,\dots,n$.\\
+\pause
+Define a function
+$$f(k) = \text{number of people $k$ knows at the party}.$$
+\pause
+Consider two cases:
+\begin{itemize}
+\pause
+\item nobody knows everyone at the party
+\pause
+\item somebody knows everyone at the party
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Application}
+\pause
+\begin{block}{Solution}
+\pause
+If nobody knows everyone at the party, then the values of $f$ are $1,2,\dots, n-1$.\\
+\pause
+Therefore $f$ is a function
+$$f: \mathbb N_n\rightarrow\mathbb N_{n-1}.$$
+\pause
+The Pidgeonhole Principle says that $f$ is not injective!\\
+\pause
+Therefore there are two different values $a$ and $b$ with $f(a) = f(b)$.\\
+\pause
+Guests $a$ and $b$ have the same number of acquaintances at the party!
+\end{block}
+\end{frame}
+
+\begin{frame}{Application}
+\begin{block}{Solution}
+\pause
+If somebody knows everyone at the party, then the values of $f$ are $2,3,\dots, n$.\\
+\pause
+Define $g(x) = f(x)-1$, which takes values $1,2,\dots, n-1$.\\
+\pause
+$$g: \mathbb N_n\rightarrow\mathbb N_{n-1}.$$
+\pause
+The Pidgeonhole Principle says that $g$ is not injective!\\
+\pause
+Therefore there are two different values $a$ and $b$ with $g(a) = g(b)$.\\
+\pause
+This means $f(a)-1=f(b)-1$, so $f(a) = f(b)$
+\pause
+Guests $a$ and $b$ have the same number of acquaintances at the party!
+\end{block}
+\end{frame}
+
+\begin{frame}{Application}
+\begin{block}{Problem}
+Let $p=8675309$.  Prove that there is a number $n$ of the form 
+$$n = 111111\dots 1$$
+which is divisible by $p$.
+\end{block}
+\pause
+Observation:
+\begin{itemize}
+\pause
+\item the number $p$ is prime, which might explain why Jenny didn't want to change it.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Application}
+\pause
+\begin{block}{Solution}
+Define $n_1 = 1$, $n_2 = 11$, $n_3 = 111$, and so on.\\
+For each $k$, define $r_k$ to be the remainder of $n_k$ divided by $p$.
+\pause
+$$B = \{r_1,r_2,\dots, r_{p+1}\}\quad\text{has at most $p$ elements}$$
+\pause
+Pidgeonhole principle: there's $j < k$ with $r_j = r_k$.\\
+\pause
+$$p\ \text{divides}\ n_k-n_j = \overbrace{111\dots 1}^{\text{$(k-j)$ many}}\overbrace{00\dots 0}^{\text{$j$ many}} = n_{k-j}\cdot10^{j}$$
+\pause
+Therefore $p$ divides $n_{k-j} = \overbrace{111\dots 1}^{\text{$(k-j)$ many}}$
+\end{block}
+\end{frame}
+
+\begin{frame}{Natural numbers are infinite}
+\pause
+\begin{block}{Theorem}
+The set $\mathbb N$ of natural numbers are infinite.
+\end{block}
+\pause
+\begin{block}{Proof}
+To see this, suppose that $\mathbb N$ was finite.\\
+\pause
+Then there would be an integer $k\in\mathbb N$ and a bijection between $\mathbb N$ and $\mathbb N_k$ for some $k\in\mathbb N$.
+\pause
+$$f: \mathbb N\rightarrow\mathbb N_k\quad\text{bijection}$$
+\pause
+Use $f$ to define a new function
+$$g: \mathbb N_{k+1}\rightarrow\mathbb N_k,\quad g(k) = f(k).$$
+\end{block}
+\end{frame}
+
+\begin{frame}{Natural numbers are infinite}
+\pause
+\begin{block}{Theorem}
+The set $\mathbb N$ of natural numbers are infinite.
+\end{block}
+\pause
+\begin{block}{Proof}
+\pause
+If $g(x) = g(y)$, then $f(x) = f(y)$.\\
+\pause
+Since $f$ is bijective, it's injective, so $x=y$.\\
+\pause
+This shows $g$ is injective.\\
+\pause
+Waaaaait a minute!  This violates the Pidgeonhole Principle!\\
+\pause
+Our original assumption that $\mathbb N$ was finite must be false.
+\end{block}
+\end{frame}
+
+
+\subsection{Wrapping up}
+
+\begin{frame}{Final thoughts}
+  \begin{block}{Reflection}
+    \begin{itemize}
+\pause
+      \item  Give the formal definition of a finite set.
+      \item  Explain why there's a bijection between $\mathbb N_j$ and $\mathbb N_k$ if and only if $j=k$.
+    \end{itemize}
+  \end{block}
+\begin{center}
+Submit your responses by \textbf{Tonight!}
+\end{center}
+\end{frame}
+
+
+\end{document}
+
+
