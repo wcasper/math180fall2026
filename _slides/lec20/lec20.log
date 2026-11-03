@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  2 NOV 2026 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  2 NOV 2026 22:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1556,7 +1556,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 427.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 427.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 427.
 Package rerunfilecheck Info: File `lec20.out' has not changed.
-(rerunfilecheck)             Checksum: FD95AE29688B754149827F84F41DB14F;242.
+(rerunfilecheck)             Checksum: 1B0A046232B0F8CCF6251E97CAA5D993;241.
  ) 
 Here is how much of TeX's memory you used:
  23131 strings out of 494847
@@ -1576,7 +1576,7 @@ public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on lec20.pdf (91 pages, 331418 bytes).
+Output written on lec20.pdf (91 pages, 331305 bytes).
 PDF statistics:
  2922 PDF objects out of 2984 (max. 8388607)
  2773 compressed objects within 28 object streams

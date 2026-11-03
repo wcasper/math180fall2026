@@ -1,5 +1,5 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{SoPS Lecture 20}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Finite Sets}{7}{0}{1}
-\beamer@subsectionintoc {1}{2}{Pidgeonhole Principle}{25}{0}{1}
+\beamer@subsectionintoc {1}{2}{Pigeonhole Principle}{25}{0}{1}
 \beamer@subsectionintoc {1}{3}{Wrapping up}{89}{0}{1}

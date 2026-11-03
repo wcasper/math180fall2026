@@ -225,7 +225,7 @@ $$f(1) = \heartsuit,\quad f(2) = \spadesuit,\quad f(3) = \diamondsuit,\quad f(4)
 \end{block}
 \end{frame}
 
-\subsection{Pidgeonhole Principle}
+\subsection{Pigeonhole Principle}
 \begin{frame}{Starting Example}
 
 \pause
@@ -266,8 +266,8 @@ Therefore $f$ fails to be injective.
 \end{block}
 \end{frame}
 
-\begin{frame}{Pidgeonhole Principle}
-\begin{block}{Theorem (Pidgeonhole Principle)}
+\begin{frame}{Pigeonhole Principle}
+\begin{block}{Theorem (Pigeonhole Principle)}
 Let $j$ and $k$ be integers with $k > j$.
 If $f: \mathbb N_k\rightarrow\mathbb N_j$, then $f$ is not injective.
 \end{block}
@@ -312,7 +312,7 @@ If nobody knows everyone at the party, then the values of $f$ are $1,2,\dots, n-
 Therefore $f$ is a function
 $$f: \mathbb N_n\rightarrow\mathbb N_{n-1}.$$
 \pause
-The Pidgeonhole Principle says that $f$ is not injective!\\
+The Pigeonhole Principle says that $f$ is not injective!\\
 \pause
 Therefore there are two different values $a$ and $b$ with $f(a) = f(b)$.\\
 \pause
@@ -329,7 +329,7 @@ Define $g(x) = f(x)-1$, which takes values $1,2,\dots, n-1$.\\
 \pause
 $$g: \mathbb N_n\rightarrow\mathbb N_{n-1}.$$
 \pause
-The Pidgeonhole Principle says that $g$ is not injective!\\
+The Pigeonhole Principle says that $g$ is not injective!\\
 \pause
 Therefore there are two different values $a$ and $b$ with $g(a) = g(b)$.\\
 \pause
@@ -361,7 +361,7 @@ For each $k$, define $r_k$ to be the remainder of $n_k$ divided by $p$.
 \pause
 $$B = \{r_1,r_2,\dots, r_{p+1}\}\quad\text{has at most $p$ elements}$$
 \pause
-Pidgeonhole principle: there's $j < k$ with $r_j = r_k$.\\
+Pigeonhole principle: there's $j < k$ with $r_j = r_k$.\\
 \pause
 $$p\ \text{divides}\ n_k-n_j = \overbrace{111\dots 1}^{\text{$(k-j)$ many}}\overbrace{00\dots 0}^{\text{$j$ many}} = n_{k-j}\cdot10^{j}$$
 \pause
@@ -401,7 +401,7 @@ Since $f$ is bijective, it's injective, so $x=y$.\\
 \pause
 This shows $g$ is injective.\\
 \pause
-Waaaaait a minute!  This violates the Pidgeonhole Principle!\\
+Waaaaait a minute!  This violates the Pigeonhole Principle!\\
 \pause
 Our original assumption that $\mathbb N$ was finite must be false.
 \end{block}
