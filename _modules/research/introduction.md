@@ -25,10 +25,10 @@ Take some time to get to know them!
 
 The timeline for our in-class research project is the following.
 
-* 10/29-11/03 -- choose your research team and question
-* 11/06-12/02 -- perform research / check-ins
-* 12/04 -- rough draft of final report due
-* 12/10 -- lightning talks 
+* 11/04-11/09 -- choose your research team and question
+* 11/09-12/02 -- perform research / check-ins
+* 12/02 -- rough draft of final report due
+* 12/09 -- lightning talks 
 * 12/14 -- final written report due
 
 
