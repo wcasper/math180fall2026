@@ -61,23 +61,24 @@ You may also choose your own research question, though you are required to get a
 
 * (1) How many possible ways are there to place the entire fleet in a standard game of Battleship?
 
-* (2) How many ways are there to completely fill up a Battleship board with $$50$$ $$2\times 1$$ ships.
+* (2) How many ways are there to put four $$2\times 1$$ Destroyers in the standard $$10\times 10$$ Battleship fleet?
 
-* (3) Suppose you are playing against a computer which always shoots at the most likely ship position based on the assumption that the fleet was randomly generated.  What fleet position avoids the computer getting a hit as long as possible.
+* (3) How many ways are there to completely fill up a Battleship board with $$50$$ $$2\times 1$$ ships.
 
-* (4) We can represent a Battleship board as a $$10\times 10$$ matrix $$A$$ whose entries are $$0$$'s and $$1$$'s.  Suppose that we know the sum of the ten rows, ten columns, ten diagonals, and ten antidiagonals.  Is it possible to reconstruct the matrix $$A$$?  Is there more than one solution?
+* (4) Suppose you take over a Battleship game halfway through.  Looking at the board of misses and hits, is there a reasonable mathematical model for the probability distribution of the remaining shots?  Is it related to the discrete Poisson equation?
 
-* (5) Suppose you play Clobber on a graph.  What types of graphs guarantee a win for Player 1?
+* (5) A set of $$20$$ SET cards without any sets is called a **cap set**.  What do various **cap sets** look like?  How many are there?
 
-* (6) Create a version of Chomp that you can play on certain directed graphs.  For what kinds of graphs does Player 1 still have a "strategy stealing argument" that shows they can force a win?  For which graphs can you work out a winning strategy for Player 1?
+* (6) Imagine you pick up a partially played game of chomp.  You decide to finish the game yourself, but in a way where you only take bites which remove a single square at a time (ie. nibbles).  How many different ways are there to nibble through the rest of the bar? What do these have to do with Young tableaux?  What about if we allow ourselves arbitrary bites?
 
-* (7) What if you play Chomp, but with some squares missing so that the chocolate bar has a hole in it.  This makes certain bites impossible, since there's no square to bite.  How does this change the game?  Under what conditions is Player 1 still guaranteed a win?
+* (7) Suppose you are playing Chomp.  The intermediate stages of the game can be described using Young diagrams.  Can you find some characterization of which Young diagrams are winning states of the board?
 
-* (8) Suppose you are playing Minesweeper on a $$n\times n$$ grid with $$m$$ mines and make the first click.  How many mine configurations are consistent with the revealed pattern?  Can we determine statistics applicable to the real game?
+* (8) In the card game War, is it possible to have a game go on forever?  What's the typical length of a game?  What if you adjust the rules?
 
-* (9) In the game Break the Cube, figure out how many ways there are to arrange the pieces.  
 
-* (10) In the card game War, is it possible for a game to go on forever?  What is the average length of a game?
+* (9) Suppose you are playing Minesweeper on a $$n\times n$$ grid with $$m$$ mines and make the first click.  How many mine configurations are consistent with the revealed pattern?  Can we determine statistics applicable to the real game?
+
+* (10) In the game Break the Cube, figure out how many ways there are to arrange the pieces.  
 
 * (11) Can you find a way to label every square in a $$10\times 10$$ grid with the letters $$A-J$$ and the numbers $$0-9$$ so that: every square gets both a letter and a number; each letter and number appears in each row and each column; no letter-number combination is repeated?  Is it then possible to color the squares with ten different colors so that each color appears once in each row and column and no letter-number-color combination is repeated?
 
