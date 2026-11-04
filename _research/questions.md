@@ -12,7 +12,8 @@ Figuring out a **good** research question is much harder, and is a skill that re
 To figure out what a good question is made up of, it helps to think about what bad questions are.  Most questions that are "bad" suffer from one or more of the following traits
 * the question is too easy to answer, so answering it isn't very interesting;
 * the question is too difficult to make any progress on at all;
-* the question is ambiguous or not well-posed;
+* the question has already been answered;
+* the question is not specific or not well-posed;
 * the question is ill-suited to the researcher or research team.
 
 So a good research question should be suited to the researcher's skills and knowledge, and should be at a happy medium between being so easy to answer that it is boring or so difficult to answer that there's no clear way to make progress.
