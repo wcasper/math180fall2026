@@ -19,7 +19,15 @@ To figure out what a good question is made up of, it helps to think about what b
 So a good research question should be suited to the researcher's skills and knowledge, and should be at a happy medium between being so easy to answer that it is boring or so difficult to answer that there's no clear way to make progress.
 A good rule of thumb is that it should be a question with many possible directions, so that even if you don't completely answer the question, you are able to answer a related one.
 
-## Example question
+## Example questions
+
+Here are some examples of not-so-good questions.  What's the problem with each one?
+- Is $$\pi + e$$ a rational number?
+- What is optimal play for Tic-Tac-Toe?
+- What's the best VIP card to get in Ready Set Bet?
+
+## Starting out
+
 
 Maybe our starting question is:
 
