@@ -82,14 +82,14 @@ You may also choose your own research question, though you are required to get a
 
 * (11) Can you find a way to label every square in a $$10\times 10$$ grid with the letters $$A-J$$ and the numbers $$0-9$$ so that: every square gets both a letter and a number; each letter and number appears in each row and each column; no letter-number combination is repeated?  Is it then possible to color the squares with ten different colors so that each color appears once in each row and column and no letter-number-color combination is repeated?
 
-* (12) Let $$t_0, t_1, t_2, t_3, \dots$$ be the Thue-Morse binary sequence.  Determine the value of the infinite sum
+* (12) The $$n$$'th **triangular number** $$t_n$$ is the number
 
-$$t_0-t_1+\frac{1}{2}t_2-\frac{1}{3}t_3+\frac{1}{4}t_4-\frac{1}{5}t_5+\dots$$
+$$t_n = 1 + 2 + 3 + 4 + \dots + n.$$
 
-Are there any other infinite sums involving $$t_n$$ that you can figure out the value of?
-For example, can you figure out
+For example $$t_1 = 1$$, $$t_2=3$$, $$t_3 =6$$, $$t_4 = 10$$, and so on.
+Is the product of two different triangular numbers ever a perfect cube?  If so, when?
+What about the product of three different triangular numbers?  Four?
 
-$$t_0+\frac{1}{2}t_1+\frac{1}{4}t_2+\frac{1}{8}t_3+\frac{1}{16}t_4+\frac{1}{32}t_5+\dots$$
  
 * (13)  Let $$a,b,c$$ be integers and consider the function  $$f: \mathbb{Z}^2\rightarrow\mathbb{Z}$$ defined by the rule
 
@@ -97,18 +97,14 @@ $$f(x,y) = ax + by + cxy.$$
 
 For which values of $$a,b,c$$ does the function turn out to be surjective?
 
-* (14)  Are there any triples of integers $$(x,y,z)$$ satisfying the equation
+* (14) For any polynomial of degree $2$, ie. $$p(x) = a + bx + cx^2$$, we form the product
 
-$$x^2+y^2=(yz-1)^3?$$
+$$N(p(x)) = (a  + bx + cx^2)(c + ax + bx^2)(b + cx + ax^2).$$
 
-What are all the solutions?
+If $$N(p(x)) = N(q(x))$$, does $$p(x) = q(x)$$?  If not, can you characterize when $$N(p(x)) = N(q(x))$$?  What about for degree $$3$$ polynomials?  Degree $$4$$?  What about degree $$n$$?
 
-* (15)  What is the minimum value of the expression
 
-$$|a+b+c|\left(\frac{1}{|a-b|} + \frac{1}{|b-c|} + \frac{1}{|c-a|}\right)$$
+* (15) Are there any integers in Pascal's triangle (besides $$1$$) which occur an infinite number of times?  If not, what's the largest number of repeats that you can find for any given number?  Can you characterize what's happening to cause the number to repeat?
 
-over all possible triples of distinct real numbers $$a,b,c$$ satisfying the identity
-
-$$a^2+b^2+c^2 = 2(ab + bc + ca).$$
 
 
