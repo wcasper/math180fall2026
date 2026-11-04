@@ -20,6 +20,14 @@ A good rule of thumb is that it should be a question with many possible directio
 
 ## Example question
 
+Here's an example of a question that's way too difficult to make progress without a lot more mathematical background knowledge.
+
+**Question:** Is $$\pi + e$$ a rational number?
+
+The problem was originally formally introduced in 1882 and since then has made very, very little progress.  Unless you have amazing insight, it's probably going to remain that way.
+
+## Example question
+
 Maybe our starting question is:
 
 **Question:** What is the maximum number of moves required to solve any Rubik's Cube puzzle?
@@ -50,7 +58,7 @@ Or how about:
 Below is a list of research questions to choose from.
 You may also choose your own research question, though you are required to get approval from me.
 
-* (1) How many possible ways are there to place the entire fleet in a standard game of Battleship?
+* (1) How many possible ways are there to place the entire fleet in a standard game of Battleship?  What about if we change the rules so that ships must be spaced at least one away from each other?
 
 * (2) How many ways are there to put four $$2\times 1$$ Destroyers in the standard $$10\times 10$$ Battleship fleet?
 
@@ -60,11 +68,11 @@ You may also choose your own research question, though you are required to get a
 
 * (5) A set of $$20$$ SET cards without any sets is called a **cap set**.  What do various **cap sets** look like?  How many are there?
 
-* (6) What move is the best first move when playing *Chomp* with a $$3\times n$$ grid?  Is there a pattern?
+* (6) Imagine you pick up a partially played game of chomp.  You decide to finish the game yourself, but in a way where you only take bites which remove a single square at a time (ie. nibbles).  How many different ways are there to nibble through the rest of the bar? What do these have to do with Young tableaux?  What about if we allow ourselves arbitrary bites?
 
-* (7) What if you play Chomp, but with some squares missing so that the chocolate bar has a hole in it.  This makes certain bites impossible, since there's no square to bite.  How does this change the game?  Under what conditions is Player 1 still guaranteed a win?
+* (7) Suppose you are playing Chomp.  The intermediate stages of the game can be described using Young diagrams.  Can you find some characterization of which Young diagrams are winning states of the board?
 
-* (8) A Knight's Tour of a chessboard is one where it touches every single square on the board exactly one time.  Suppose you colored the chessboard with three colors, rather than two, ie. black, white, and blue, in a repeating way.  Is it possible for a Knight to do a "blue Knight's Tour", where they only move on the blue squares and touch every blue square exactly one time?  How many blue Knight's tours are there?
+* (8) In the card game War, is it possible to have a game go on forever?  What's the typical length of a game?  What if you adjust the rules?
 
 * (9) Can you find any positive integers $$n$$ where $$\tan(n) > n$$ (in radians)?  How many can you find?  Can you see any relationship between them?
 
@@ -79,7 +87,7 @@ If you repeatedly apply this function to a whole number, it seems like that numb
 
 $$3\xrightarrow{f} 10\xrightarrow{f}5\xrightarrow{f}16\xrightarrow{f}8\xrightarrow{f}4\xrightarrow{f}2\xrightarrow{f}1.$$
 
-Is that true for all integers?  For what integers can you guarantee it will work?
+Is that true for all integers?  Can you find any general conditions on $$x$$ which will guarantee it will work?
 
 * (11) How many non-overlapping triangles can you make using $$5$$ straight lines?  What about $$6$$?  In general?
 
@@ -97,18 +105,14 @@ $$f(x,y) = ax + by + cxy.$$
 
 For which values of $$a,b,c$$ does the function turn out to be surjective?
 
-* (14)  Are there any triples of integers $$(x,y,z)$$ satisfying the equation
+* (14) For any polynomial of degree $2$, ie. $$p(x) = a + bx + cx^2$$, we form the product
 
-$$x^2+y^2=(yz-1)^3?$$
+$$N(p(x)) = (a  + bx + cx^2)(c + ax + bx^2)(b + cx + ax^2).$$
 
-What are all the solutions?
+If $$N(p(x)) = N(q(x))$$, does $$p(x) = q(x)$$?  If not, can you characterize when $$N(p(x)) = N(q(x))$$?  What about for degree $$3$$ polynomials?  Degree $$4$$?  What about degree $$n$$?
 
-* (15)  What is the minimum value of the expression
 
-$$|a+b+c|\left(\frac{1}{|a-b|} + \frac{1}{|b-c|} + \frac{1}{|c-a|}\right)$$
+* (15) Are there any integers in Pascal's triangle (besides $$1$$) which occur an infinite number of times?  If not, what's the largest number of repeats that you can find for any given number?  Can you characterize what's happening to cause the number to repeat?
 
-over all possible triples of distinct real numbers $$a,b,c$$ satisfying the identity
-
-$$a^2+b^2+c^2 = 2(ab + bc + ca).$$
 
 
