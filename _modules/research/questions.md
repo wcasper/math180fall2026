@@ -12,21 +12,21 @@ Figuring out a **good** research question is much harder, and is a skill that re
 To figure out what a good question is made up of, it helps to think about what bad questions are.  Most questions that are "bad" suffer from one or more of the following traits
 * the question is too easy to answer, so answering it isn't very interesting;
 * the question is too difficult to make any progress on at all;
-* the question is ambiguous or not well-posed;
+* the question has already been answered;
+* the question is not specific or not well-posed;
 * the question is ill-suited to the researcher or research team.
 
 So a good research question should be suited to the researcher's skills and knowledge, and should be at a happy medium between being so easy to answer that it is boring or so difficult to answer that there's no clear way to make progress.
 A good rule of thumb is that it should be a question with many possible directions, so that even if you don't completely answer the question, you are able to answer a related one.
 
-## Example question
+## Example questions
 
-Here's an example of a question that's way too difficult to make progress without a lot more mathematical background knowledge.
+Here are some examples of not-so-good questions.  What's the problem with each one?
+- Is $$\pi + e$$ a rational number?
+- What is optimal play for Tic-Tac-Toe?
+- What's the best VIP card to get in Ready Set Bet?
 
-**Question:** Is $$\pi + e$$ a rational number?
-
-The problem was originally formally introduced in 1882 and since then has made very, very little progress.  Unless you have amazing insight, it's probably going to remain that way.
-
-## Example question
+## Starting out
 
 Maybe our starting question is:
 
@@ -74,22 +74,11 @@ You may also choose your own research question, though you are required to get a
 
 * (8) In the card game War, is it possible to have a game go on forever?  What's the typical length of a game?  What if you adjust the rules?
 
-* (9) Can you find any positive integers $$n$$ where $$\tan(n) > n$$ (in radians)?  How many can you find?  Can you see any relationship between them?
+* (9) Suppose you are playing Minesweeper on a $$m\times n$$ grid with $$r$$ mines.  Your first click often reveals more than one cell in the grid.  What is the average number of revealed cells? Does it depend on the location?  In that case, which click tends to reveal the most cells?
 
-* (10) Consider the function
+* (10) Can you find a way to label every square in a $$10\times 10$$ grid with the letters $$A-J$$ and the numbers $$0-9$$ so that: every square gets both a letter and a number; each letter and number appears in each row and each column; no letter-number combination is repeated?  Is it then possible to color the squares with ten different colors so that each color appears once in each row and column and no letter-number-color combination is repeated?
 
-$$f(x) = \left\lbrace\begin{array}{cc}
-x/2,  & x \text{is even}\\
-3x+1, & x \text{is odd}\\
-\end{array}\right.$$
-
-If you repeatedly apply this function to a whole number, it seems like that number will eventually become $$1$$.  For example
-
-$$3\xrightarrow{f} 10\xrightarrow{f}5\xrightarrow{f}16\xrightarrow{f}8\xrightarrow{f}4\xrightarrow{f}2\xrightarrow{f}1.$$
-
-Is that true for all integers?  Can you find any general conditions on $$x$$ which will guarantee it will work?
-
-* (11) How many non-overlapping triangles can you make using $$5$$ straight lines?  What about $$6$$?  In general?
+* (11) In the game Break the Cube, figure out how many ways there are to arrange the pieces.  
 
 * (12) The $$n$$'th **triangular number** $$t_n$$ is the number
 

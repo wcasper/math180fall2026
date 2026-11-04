@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research Introduction
-permalink: /modules/research/introduction
+permalink: /research/introduction
 ---
 
 ## Introduction
@@ -15,7 +15,7 @@ The goal of this module is to give a math research-type experience in our class,
 
 ## Get to know your team!
 
-You will be part of a team of 2-3 students in the class.
+You will be part of a team of up to 4 students in the class.
 Take some time to get to know them!
 * What are their interests, and do they have common interests?
 * What skill do they bring to the table?  Maybe one student knows a bit of coding.  Maybe another knows how to really nice drawings or digital graphics.  Maybe someone is really good at presenting or creating online videos.
@@ -25,19 +25,12 @@ Take some time to get to know them!
 
 The timeline for our in-class research project is the following.
 
-|-----------------------------------|--------------------|
-|    choose your research team      |     11/19-11/20    |
-|    pick your research question    |     11/19-11/20    | 
-|    in-class research check-in     |     12/02-12/06    |
-|     final written report due      |        12/15       | 
-|      mock poster conference       |     12/11-12/12    | 
-|-----------------------------------|--------------------|
+* 10/29-11/03 -- choose your research team and question
+* 11/06-12/02 -- perform research / check-ins
+* 12/04 -- rough draft of final report due
+* 12/10 -- lightning talks 
+* 12/14 -- final written report due
 
-
-* You will need to do some work/thinking at home.  Make sure we are collaborating together thinking over ideas and creating a common document.
-* I will give feedback and guidance by email and also during class 12/02-12/06
-* We will have time during class to create a research poster and present our results in class.  We will also have a discussion about what presenting research in a poster is like, what the expectations are, and good conference etiquette.
-* On the last day of class, we will have a research poster conference where each student group will present their posters and results.
 
 ## Evaluation 
 

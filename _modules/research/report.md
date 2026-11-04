@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research Report
-permalink: /modules/research/report
+permalink: /research/report
 ---
 
 ## Components of your report
