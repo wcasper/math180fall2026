@@ -91,7 +91,7 @@ What about the product of three different triangular numbers?  Four?
 * (13)  Let $$a,b,c$$ be integers and consider the function  $$f: \mathbb{Z}^2\rightarrow\mathbb{Z}$$ defined by the rule $$f(x,y) = ax + by + cxy.$$
 For which values of $$a,b,c$$ does the function turn out to be surjective?
 
-* (14) For any polynomial of degree $2$, ie. $$p(x) = a + bx + cx^2$$, we form the product
+* (14) For any polynomial of degree $$2$$, ie. $$p(x) = a + bx + cx^2$$, we form the product
 $$N(p(x)) = (a  + bx + cx^2)(c + ax + bx^2)(b + cx + ax^2).$$
 If $$N(p(x)) = N(q(x))$$, does $$p(x) = q(x)$$?  If not, can you characterize when $$N(p(x)) = N(q(x))$$?  What about for degree $$3$$ polynomials?  Degree $$4$$?  What about degree $$n$$?
 
