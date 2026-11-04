@@ -82,25 +82,17 @@ You may also choose your own research question, though you are required to get a
 
 * (11) Can you find a way to label every square in a $$10\times 10$$ grid with the letters $$A-J$$ and the numbers $$0-9$$ so that: every square gets both a letter and a number; each letter and number appears in each row and each column; no letter-number combination is repeated?  Is it then possible to color the squares with ten different colors so that each color appears once in each row and column and no letter-number-color combination is repeated?
 
-* (12) The $$n$$'th **triangular number** $$t_n$$ is the number
-
-$$t_n = 1 + 2 + 3 + 4 + \dots + n.$$
-
+* (12) The $$n$$'th **triangular number** $$t_n$$ is the number $$t_n = 1 + 2 + 3 + 4 + \dots + n.$$
 For example $$t_1 = 1$$, $$t_2=3$$, $$t_3 =6$$, $$t_4 = 10$$, and so on.
 Is the product of two different triangular numbers ever a perfect cube?  If so, when?
 What about the product of three different triangular numbers?  Four?
 
  
-* (13)  Let $$a,b,c$$ be integers and consider the function  $$f: \mathbb{Z}^2\rightarrow\mathbb{Z}$$ defined by the rule
-
-$$f(x,y) = ax + by + cxy.$$
-
+* (13)  Let $$a,b,c$$ be integers and consider the function  $$f: \mathbb{Z}^2\rightarrow\mathbb{Z}$$ defined by the rule $$f(x,y) = ax + by + cxy.$$
 For which values of $$a,b,c$$ does the function turn out to be surjective?
 
 * (14) For any polynomial of degree $2$, ie. $$p(x) = a + bx + cx^2$$, we form the product
-
 $$N(p(x)) = (a  + bx + cx^2)(c + ax + bx^2)(b + cx + ax^2).$$
-
 If $$N(p(x)) = N(q(x))$$, does $$p(x) = q(x)$$?  If not, can you characterize when $$N(p(x)) = N(q(x))$$?  What about for degree $$3$$ polynomials?  Degree $$4$$?  What about degree $$n$$?
 
 
